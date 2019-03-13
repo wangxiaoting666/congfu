@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<style>
+			.banner {
+				background: url(img/index_tyj.png) no-repeat center;
+				overflow: hidden;
+				min-height: 487px;
+				background-size: cover;
+			}
+			
+			.banner_inner {
+				width: 830px;
+				height: 221px;
+				margin: auto;
+				padding: 165px 0 0 200px;
+				position: relative;
+			}
+			/*.banner_inner ul{float: left; padding: 76px 0 0 150px;}
+			.banner_ininer ul li{line-height: 34px; list-style: none;}
+			.banner_inner a{position: absolute; right: 37px; bottom: 0;} */
+			/*换一换*/
+			
+			li {
+				list-style: none;
+			}
+			
+			.banner_center {
+				margin: 0 auto;
+				width: 760px;
+			}
+			
+			.title {
+				width: 761px;
+				height: 30px;
+				line-height: 30px;
+				text-align: right;
+				padding-right: 15px;
+			}
+			
+			.title a {
+				text-decoration: none;
+			}
+			
+			.nav {
+				/*width:960px;*/
+				height: 205px;
+				margin-top: 5px;
+				overflow: hidden;
+			}
+			
+			.nav ul li {
+				width: 960px;
+				float: left;
+				height: 215px;
+			}
+			
+			.nav ul li ul {
+				float: left;
+				padding: 76px 0 0 150px;
+				width: 200px;
+			}
+			
+			.nav ul li ul li {
+				/*width:155px;*/
+				float: left;
+				height: 27px;
+				margin: 6px 0 0 6px;
+			}
+			
+			.nav ul li ul li.first {
+				margin-left: 0;
+			}
+			
+			.hot4 {
+				height: 400px;
+			}
+			
+			.hot4 .inner_hot4 {
+				width: 758px;
+				margin: auto;
+			}
+			
+			.inner_hot4 h3 {
+				margin-top: 111px;
+				font-size: 17px;
+				margin-bottom: 14px;
+			}
+			
+			.inner_hot4 .text {
+				width: 601px;
+				height: 239px;
+			}
+			
+			.sub {
+				width: 119px;
+				height: 38px;
+				background: #B20007;
+				color: #FFFFFF;
+				margin: 10px 0 0 475px;
+			}
+		</style>
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+		<script type="text/javascript">
+			var i = 2;
+			count = 5;
+
+			function next() {
+				for(var j = 1; j <= count; j++) {
+					if(i == j) {
+						$('#l' + j).show();
+					} else {
+						$('#l' + j).hide();
+					}
+				}
+				if(i < count) {
+					i++;
+				} else {
+					i = 1;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="banner">
+			<div class="banner_inner">
+				<!--换一换-->
+				<div class="banner_center">
+
+					<div class="nav">
+						<ul id='list'>
+							<li id='l1'>
+								<ul>
+									<li class="first">1.手机收不到验证码</li>
+									<li>2.如何入驻聪付？</li>
+									<li>3.忘记支付密码？</li>
+									<li></li>
+								</ul>
+								<ul>
+									<li>4.收不到邮件激活？</li>
+									<li>5.手机充值未到账？</li>
+									<li>6.如何设置安全问题？</li>
+									<li></li>
+
+								</ul>
+							</li>
+
+							<li id='l2'>
+								<ul>
+									<li class="first">1.手机收不到验证码?</li>
+									<li> 2.如何入驻聪付？</li>
+									<li>3.什么是实名认证？</li>
+									<li></li>
+								</ul>
+								<ul>
+									<li>4.如何登陆聪付APP</li>
+									<li>5.如何设置安全问题？</li>
+									<li>6.什么是实名认证？</li>
+									<li></li>
+
+								</ul>
+							</li>
+							<li id='l3'>
+								<ul>
+									<li class="first">1.什么是实名认证？</li>
+									<li>2.如何登陆聪付APP</li>
+									<li>3.如何设置安全问题？</li>
+									<li></li>
+								</ul>
+
+								<ul>
+									<li>4.手机收不到验证码?</li>
+									<li>5.什么是实名认证？</li>
+									<li>6.如何设置安全问题？</li>
+									
+
+								</ul>
+							</li>
+							<li id='l4'>
+								<ul>
+									<li class="first">1.如何设置安全问题？</li>
+									<li>2.什么是实名认证？</li>
+									<li>3.如何找回密码</li>
+									
+								</ul>
+								<ul>
+									<li>4.什么是实名认证？</li>
+									<li>5.如何申请入驻</li>
+									<li>6.如何成为商家</li>
+									
+									</ul>
+							</li>
+							<li id='l5'>
+								<ul>
+									<li class="first">1.如何和管理卡片</li>
+									<li>2，如何参加活动成为商家</li>
+									<li>3.如何搜索地图功能</li>
+									
+								</ul>
+								<ul>
+									<li>4.如何成为聪付管理员</li>
+									<li>5.如何注册聪付</li>
+									<li class="first">6.如何开启手机提醒功能</li>
+									
+
+								</ul>
+							</li>
+							</ul>
+					</div>
+				
+					<div class="title">
+						<a href="#" onclick="next();">换一批</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="hot4">
+			<div class="inner_hot4">
+				<form>
+					<h3>您的建议我们将全力处理，如有咨询或疑问，请进入服务中心</h3>
+					<textarea class="text"></textarea><br />
+					<input type="submit" value="提交" class="sub" />
+				</form>
+			</div>
+		</div>
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+</html>

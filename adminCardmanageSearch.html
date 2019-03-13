@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>卡片管理 - 卡片检索（已挂失）</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/admin.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<!--分页-->
+	  <link rel="stylesheet" href="css/pagination.css"/>
+	  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.pagination.js"></script>
+
+		<style type="text/css">
+			
+			
+			.admin_main_innerR06 {
+				width: 806px;
+				height:730px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			
+			.admin_main_innerR06 p {
+				margin-right: 8px;
+				display: inline-block;
+			}
+			
+			.admin06_1 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.admin06_2 { width: 783px; height: 151px; background:#f5f5f5; border: 1px solid #CCCCCC; margin:11px 0 0 13px;}
+			.admin06_3 {}
+			
+			.admin06_3 a{ width: 92px; height: 35px; margin:27px 0 26px 27px; display: inline-block;
+			 color: #FFFFFF;  background: #B20007; line-height: 31px; text-align: center; font-weight: 600;}
+			.admin06_4 { }
+			.admin06_4left {}
+			.admin06_4right  select{ width: 77px; height: 32px; color:#6C6C6C;}
+			
+			.admin06_4 p{float: left; margin-top: 10px; font-weight: 900;}
+			/*.admin06_4 div{float: left; border: 1px solid #CCCCCC;}*/
+			.admin06_4 div input{float: left; }
+			
+			.admin06_5 {}
+			.admin06_6 {width: 783px; height: 39px; border: 1px solid #CCCCCC; margin-left: 13px;border-top: none;}
+			.admin06_6 li{ width: 120px; float: left; text-align: center; font-weight: 900; line-height: 34px;}
+			   /*拼接后的数据样式*/
+   .detail span{text-align: center; display: inline-block; }
+   .detail .price0{width: 15px; margin-left:18px ;}
+   .detail .price1{ width: 150px;}
+   .detail .price2{width: 140px;}
+   .detail .price3{ margin-left: 5px;}
+   .detail .price4{}
+   .detail .price5{}
+   .detail .price6{margin-right: 25px;}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('admin-header-footer.html  #header_wrap');
+				$('#footer01').load('admin-header-footer.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body >
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="inner_admin">
+			<div class="aa">
+				<div id="leftmenu0">
+				<li style="margin-top: 15px;"><img src="img/admin-01.png"/></li>
+				<li ><a href="adminManagemant.html">会员管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminBussinessManage.html">商家管理</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-02.png"/></li>
+				<li ><a href="adminCardmanage.html">卡片管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminCardmanageCashnote.html">现金充值</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-03.png"/></li>
+				<li ><a href="adminDetailmanageNoterecord.html">会员交易</a></li>
+				<li   style="border-bottom: 1px solid #CCCCCC;"><a href="adminDetailmanageBusdealrecord.html">商家交易</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-04.png"/></li>
+				<li ><a href="adminNewsactivy.html">新闻活动</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="serviceReminder.html">账户设置</a></li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--卡片管理 - 卡片检索（已挂失）-->
+				<div class="admin_main_innerR06">
+					
+						<div class="admin06_1"><img src="img/p_kpgl1.png" /></div>
+						<div class="admin06_2">
+							<div class="admin06_3">
+								 <a>卡片注销</a>
+								 <a>卡片挂失</a>
+								 <a>卡片激活</a>
+								 <a>卡片补办</a>
+							</div>
+							<div class="admin06_4">
+								<div class="admin06_4left">
+								<p style="margin-left: 37px;">卡片检索</p>
+								<div class="admin06_5">
+									<input type="text"  placeholder="赵云鹤" style="width: 207px; height: 33px; "/>
+									<input type="button" value="查询"  style="width:68px; height: 36px; background: #B20007; color: #FFFFFF; font-weight: 600;"/>
+								</div>
+								</div>
+								<div class="admin06_4right">
+									<p style="margin-left: 73px;">卡片类型</p>
+									<select>
+										 <option>已挂失</option>
+										 <option>已挂失</option>
+										 <option>已挂失</option>
+									</select>
+								</div>
+								
+							</div> 
+						</div>
+						<div class="admin06_6">
+							<ul>
+								<li>卡号</li>
+								<li>姓名</li>
+								<li>手机号</li>
+								<li>卡片类型</li>
+								<li>卡片余额（元）</li>
+								<li>开卡时间</li>
+								
+							</ul>
+						</div>
+						
+						<!-- 分页-->
+		          	    	  	   <div class="list"></div>
+		          	    	  	   <div class="setPageDiv">
+   <div class="Pagination"  id="pagination"></div>
+</div>
+							
+							
+						
+						
+				</div>
+
+			</div>
+		</div>
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+
+	</body>
+<script>
+	
+ 	 //分页
+$(function(){
+      
+        $('.setPage').change(function(){
+
+            getMsg(parseInt($(this).val()))
+        })
+
+        function getMsg(num){
+            $.ajax({
+              url:"data/JIAOYI.json",
+                type:'GET',
+                dataType:'json',
+                success:function(data){
+                		var sun1 = data;
+                    //1.计算分页数量
+                    var showNum=num;
+                    var dataL=data.list.length;
+                    var pageNum=Math.ceil(dataL/showNum);
+                    
+                    $('.Pagination').pagination(pageNum,{
+                        num_edge_entries: 1, //边缘页数
+                        num_display_entries: 4, //主体页数
+                        items_per_page: 1, //每页显示1项
+                        prev_text: "上一页",
+                        next_text: "下一页",
+                        callback:function(index){
+                        	var aaaaa = index;
+                        	console.log(index);
+                            var html='<ul>'
+
+                            console.log(showNum*index+'~'+parseInt(showNum*index)+parseInt(showNum))
+                            for(var i = showNum*index; i < showNum*index+showNum;i++){
+                            		var qqqq = dataL;
+                                console.log(i)
+                                if(i<dataL){
+                                     var address = data.list[i].bus.address;
+                                     var bus_Id=data.list[i].bus.bus_Id; 
+                                     var money=data.list[i].bus.money;
+                                     var shopName=data.list[i].bus.shopName;
+                                     
+                                     var person=data.list[i].person;
+//                                   var name="网点充值";
+                                     var hh = "<input type='checkbox' name='interest' value='like' >"
+                                      html += "<li >";
+
+                                       
+                                        html += "<div class='detail'>";
+                                         html += "<span class='price0'>" + hh + "</span>"
+                                        html += "<span class='price1'>" + address + "</span>"
+                                        html += "<span class='price2'>" + money  + "</span>"
+                                        html += "<span class='price3'>" + bus_Id + "</span>"
+                                        html += "<span class='price4'>" + person + "</span>"
+                                       html += "<span class='price4'>" + person + "</span>"
+                                       
+                                        
+                                        
+                                        html += "</div></li>";
+                                }
+                            }
+                            html+='</ul>';
+                            $('.list').html(html)
+                        }
+                    })
+                    
+                }
+            })
+        }
+        getMsg(8)
+     
+})
+
+</script>
+</html>

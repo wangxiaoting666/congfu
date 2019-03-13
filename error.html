@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="css/com.css" />-->
+		<script src="js/jquery-1.11.3.js"></script>
+		<style>
+			.successful {
+				width: 601px;
+				height: 471px;
+				background: #ffffff;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.successful .s {
+				width: 430px;
+				height: 145px;
+				border-bottom: 1px solid #CCCCCC;
+				margin-left: 92px;
+			}
+			
+			.successful .s h3 {
+				font-size: 29px;
+				color: #525898;
+				text-align: center;
+			}
+			
+			.successful .z {
+				width: 209px;
+				height: 158px;
+				margin-left: 199px;
+			}
+			
+			.successful .z h3 {
+				font-size: 24px;
+			}
+			
+			.successful .z a {
+				color: #3894cf;
+				display: block;
+			}
+			
+			.successful .x {
+				width: 340px;
+				height: 47px;
+				border: 1px solid #CCCCCC;
+				margin-left: 131px;
+			}
+			
+			.successful .x a {
+				display: block;
+				text-align: center;
+				line-height: 45px;
+			}
+		</style>
+		<!--加载头部模板
+      	<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header');
+				$('#footer01').load('one_headerfooter.html  #footer');
+				
+			})
+		</script>-->
+	</head>
+
+	<body>
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="successful">
+			<div class="s">
+				<h3>失败!</h3>
+			</div>
+			<div class="z">
+				<h3>选择离开此界面</h3>
+			</div>
+			<div class="x">
+				<a href="javascript:;" id="wc">返回</a>
+			</div>
+		</div>
+		<!--加载尾部的内容
+		<div id="footer01"></div>-->
+		<script>
+			/*售前客服*/
+			$(function() {
+				$("#wc").click(function() {
+					//alert(1)
+					$(".successful").css('display', 'none')
+				})
+
+				/*$(".jianxiao").click(function(){
+					//alert(1)成功				
+					$("#form").stop().slideDown();
+				})	*/
+
+			})
+		</script>
+	</body>
+
+</html>

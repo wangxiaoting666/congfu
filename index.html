@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<!--轮播-->
+		<script src="js/lunbo.js"></script>
+		<script src="js/startMove.js"></script>
+
+		<title>首页</title>
+		<style>
+			.wt:hover {
+				-webkit-animation: tada 1s .2s ease both;
+				-moz-animation: tada 1s .2s ease both;
+			}
+			
+			@-webkit-keyframes tada {
+				0% {
+					-webkit-transform: scale(1);
+				}
+				10%,
+				20% {
+					-webkit-transform: scale(0.9) rotate(-3deg);
+				}
+				30%,
+				50%,
+				70%,
+				90% {
+					-webkit-transform: scale(1.1) rotate(3deg);
+				}
+				40%,
+				60%,
+				80% {
+					-webkit-transform: scale(1.1) rotate(-3deg);
+				}
+				100% {
+					-webkit-transform: scale(1) rotate(0);
+				}
+			}
+			
+			@-moz-keyframes tada {
+				0% {
+					-moz-transform: scale(1);
+				}
+				10%,
+				20% {
+					-moz-transform: scale(0.9) rotate(-3deg);
+				}
+				30%,
+				50%,
+				70%,
+				90% {
+					-moz-transform: scale(1.1) rotate(3deg);
+				}
+				40%,
+				60%,
+				80% {
+					-moz-transform: scale(1.1) rotate(-3deg);
+				}
+				100% {
+					-moz-transform: scale(1) rotate(0);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="header_wrap">
+			<div class="header_inner">
+				<div class="header_left"><img src="img/header.png"></div>
+
+				<div class="header_center">
+					<a>
+						<h3>首页</h3></a>
+					<a href="new_activity.html">
+						<h3>最新活动</h3></a>
+					<a href="Merchantsettled.html">
+						<h3>商户入驻</h3></a>
+
+					<a href="servicecenter.html">
+						<h3>服务中心</h3></a>
+				</div>
+
+				<div class="header_right">
+					<a href="personal-login.html" target="_blank" class="login">
+						<h3>登陆</h3></a>
+					<a href="personal-register.html" target="_blank" class="resiger">
+						<h3>注册</h3></a>
+					<a href="contactus.html"><img src="img/header2.png" alt=""></a>
+				</div>
+			</div>
+
+		</div>
+
+		<!--banner-->
+		<!--<div id="banner"><img src="img/banner1.png"></div>-->
+		<div id="banner">
+			<a id="btnLeft"></a>
+			<a id="btnRight"></a>
+			<div id="pic">
+				<img style="opacity:1;" src="img/banner00.png" />
+				<img src="img/banner01.png" />
+				<img src="img/banner02.png" />
+				<img src="img/banner04.png" />
+
+			</div>
+		</div>
+
+		<!--main-->
+		<div id="wrapper_main">
+			<div class="inner_main">
+				<dl>
+					<dt><img src="img/1.png"  class="wt"></dt>
+					<dd>
+						<h3>更急速的支付</h3>
+						<p>只需要一个动作即可完成近场感应支付，无找零，假币烦恼</p>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="img/2.png"  class="wt"></dt>
+					<dd>
+						<h3>更便捷的支付</h3>
+						<p>实时在本卡上查询余额，无需充电，无需通过短信/APP/WEB登录等传统方式查询</p>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="img/3.png" class="wt"></dt>
+					<dd>
+						<h3>更领先的交互</h3>
+						<p>与智能手机直接交互，实现查询、充值，一键锁卡等操作</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/4.png" class="wt"></dt>
+					<dd>
+						<h3>更安全的交易</h3>
+						<p>采用复旦微电子最新款NFC芯片，新一代加密技术进一步提升移动支付的安全性。</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/5.png"  class="wt"></dt>
+					<dd>
+						<h3>更低廉的成本</h3>
+						<p>产品价格控制在100元以下，是普通智能手机价格的30分之一。</p>
+					</dd>
+				</dl>
+			</div>
+
+		</div>
+
+		<!--hot-->
+		<div id="hot">
+			<div class="hot1">
+				<div class="hot1_inner">
+					<div class="hot1_img"><img src="img/6.png" class="wt" /></div>
+
+					<div class="hot1_h3">
+						<p>附近优质商家</p>
+						<a href="servicecenter.html">点击查询</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="hot2">
+				<div class="hot2_inner">
+					<div class="hot2_p">
+						<p>便捷支付</p>
+						<p>温馨家人在身边</p>
+						<a href="bussinessregister.html">申请开通</a>
+					</div>
+					<div class="hot2_img"><img src="img/7.png" class="wt"></div>
+				</div>
+			</div>
+
+			<div class="hot3">
+				<div class="hot3_inner">
+					<div class="hot3_img"><img src="img/8.png" class="wt" /></div>
+
+					<div class="hot3_h3">
+						<p>成为优质商家</p>
+						<a href="Merchantsettled.html">申请入驻</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="hot4">
+				<div class="inner_hot4">
+					<h3>关于聪付</h3>
+					<p>建立具有先进水平的、以IC卡为核心的应用平台，连接社区、学校、小额消费等其它行业，最终成为成熟的， 提供以智能卡为交易载体， 全 面应用于市域内公共交通，轨道交通以及其他小额支付交易领域的电子支付结算服务商，始终坚定不移地致力于运用高科技 手段服务市政交通及小 额支付领域，推动城市化管理的快速发展，服务智慧城市建设.....
+						<a href="specialservice.html">更多</a>
+					</p>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="footer_wrap">
+			<div class="footer_inner">
+				<div class="left"><img src="img/footer.png" alt="" /></div>
+				<div class="center">
+					<p>聪付版权所有：版权所有2016沪ICP证888888号2016聪付 使用聪付前必读聪付协议</p>
+				</div>
+				<div class="right">
+					<a href="servicecenter.html">帮助中心|</a>
+					<a href="tip.html">提建议</a>
+				</div>
+			</div>
+		</div>
+		<!--返回顶部-->
+		<div style="position: fixed;right:0;bottom: 80px;">
+			<a href="#banner">
+				<img src="http://www.intmote.com/wp-content/uploads/2017/04/return-top.gif">
+			</a>
+		</div>
+
+	</body>
+
+</html>

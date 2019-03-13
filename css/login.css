@@ -1,0 +1,48 @@
+/*登录注册的头部*/
+			
+			#header {
+				
+				height: 111px;
+			}
+			.header_inner{width: 1181px; margin: auto;}
+			.header_left {
+				
+				float: left;
+			}
+			
+			.header_left img {
+				float: right;
+				margin-top: 21px;
+			}
+			
+			.header_center {
+				color: #525898;
+				font-size: 24px;
+				border-bottom: 1px solid #CCCCCC;
+				float: left;
+				margin-left: 59px;
+				margin-top: 32px;
+			}
+			
+			.header_center h3 {
+				/*border-bottom: 1px solid #CCCCCC;*/
+				background: url(img/login-01.png ) no-repeat bottom;
+				
+				line-height: 38px;
+			}
+			
+			.header_right {
+				/*width: 417px;*/
+				float: left;
+				margin-top: 27px;
+				margin-left: 700px;
+			}
+			
+
+/*footer*/
+#footer_wrap{height:119px; background: #dddddd; }
+ .footer_inner{width: 1106px; margin: auto;}
+  .left{float: left; /*margin: 25px  10px  0  411px; */  margin-top: 25px; }
+  .center{ float: left; font-size: 14px;  margin-top: 49px; margin-left: 20px; }
+  .right{ float:left; margin-top: 51px;  margin-left: 208px;}
+  .right a{ color: #000000; text-decoration: none;}

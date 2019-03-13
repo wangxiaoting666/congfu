@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>明细管理-会员交易-消费记录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/admin.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		
+		<!--easyui日历框架-->
+		<link rel="stylesheet" type="text/css" href="easyui/css/themes/default/easyui.css">
+		<link rel="stylesheet" type="text/css" href="easyui/css/themes/icon.css">
+		<script type="text/javascript" src="easyui/js/jquery.min.js"></script>
+		<script type="text/javascript" src="easyui/js/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="easyui/js/easyui-lang-zh_CN.js"></script>
+		<!--分页-->
+	  <link rel="stylesheet" href="css/pagination.css"/>
+	  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.pagination.js"></script>
+
+		<style type="text/css">
+			
+			
+			.admin_main_innerR06 {
+				width: 806px;
+				height:730px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			
+			/*.admin_main_innerR06 p {
+				margin-right: 8px;
+				display: inline-block;
+			}*/
+			
+			.admin06_1 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.admin06_2 { width: 783px; height: 100px; background:#f5f5f5; border: 1px solid #CCCCCC; margin:11px 0 0 13px; border-bottom: none;}
+			.admin06_3 {/*width: 362px;*/ height: 99px; float: left;}
+			
+			.admin06_3 a{ width: 92px; height: 35px; margin:27px 0 0 23px; display: inline-block; color: #FFFFFF;  background: #B20007; line-height: 31px; text-align: center;}
+			.admin06_4 {float: left;  margin: 27px 0 0 35px ; }
+		
+			
+			
+			
+			.admin06_5 { float: left; border: 1px solid #CCCCCC;}
+				.admin06_6 {width: 783px; height: 39px; border: 1px solid #CCCCCC; margin-left: 13px;border-top: none;}
+			.admin06_6 li{ width: 129px; float: left; text-align: center; font-weight: 900; line-height: 30px;}
+			  /*拼接后的数据样式*/
+   .detail span{/*text-align: center;*/ display: inline-block; }
+   /*.detail .price0{width: 5px; margin-left:18px ;}*/
+   .detail .price1{ width: 180px; margin-left:18px ;}
+   .detail .price2{width: 120px;}
+   .detail .price3{ width: 146px;}
+   .detail .price4{width: 120px;}
+   .detail .price5{width: 120px;}
+   .detail .price6{width: 140px;}
+   
+   /*日期和日历*/
+   .data{width: 783px; height: 67px; margin-left: 13px; border:1px solid #CCCCCC; border-top: none;  line-height: 40px;}
+   .data a{display:inline-block; margin-left: 12px;font-size: 15px; }
+   .data a:hover{background:#4b53ab ; }
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('admin-header-footer.html  #header_wrap');
+				$('#footer01').load('admin-header-footer.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body >
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="inner_admin">
+			<div class="aa">
+				<div id="leftmenu0">
+				<li style="margin-top: 15px;"><img src="img/admin-01.png"/></li>
+				<li ><a href="adminManagemant.html">会员管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminBussinessManage.html">商家管理</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-02.png"/></li>
+				<li ><a href="adminCardmanage.html">卡片管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminCardmanageCashnote.html">现金充值</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-03.png"/></li>
+				<li ><a href="adminDetailmanageNoterecord.html">会员交易</a></li>
+				<li   style="border-bottom: 1px solid #CCCCCC;"><a href="adminDetailmanageBusdealrecord.html">商家交易</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-04.png"/></li>
+				<li ><a href="adminNewsactivy.html">新闻活动</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="serviceReminder.html">账户设置</a></li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--明细管理-会员交易-消费记录-->
+				<div class="admin_main_innerR06">
+					
+						<div class="admin06_1"><img src="img/detail04.png" /></div>
+						<div class="admin06_2">
+							<div class="admin06_3">
+								 <a  href="adminDetailmanageConsrecord.html">消费记录</a>
+								 <a href="adminDetailmanageNoterecord.html">充值记录</a>
+								 
+							</div>
+							<div class="admin06_4">
+								<p style="float: left; margin-top: 10px;margin-right: 19px; font-weight: 700;">卡片检索</p>
+								<div class="admin06_5">
+									<input type="text"  placeholder="请输入卡号，手机号，姓名" style="width: 207px; height: 33px; border: none;  "/>
+									<input type="button" value="查询"  style="width:68px; height: 33px; background: #B20007; color: #FFFFFF;border: none;"/>
+								</div>
+								<div style=" float: left; width:68px; height: 33px; background: #B20007; color: #FFFFFF; text-align: center;  line-height: 34px; margin-left: 18px;" >读卡</div>
+							</div> 
+						</div>
+						<!--日历和日期-->
+						<div class="data">
+							<p style="display: inline-block; margin-left: 30px; font-weight: 800;">创建日期</p>
+
+							<input type="datebox" class="easyui-datebox"  name="starttime control_date" id="control_date" style=" width: 118px; height: 35px; border: 1px solid #CCCCCC;"   >
+							到<input type="datebox"   class="easyui-datebox"   name="endtime control_date2" id="control_date2"  style=" width: 118px; height: 35px;">
+
+							<a href="javascript:void(0)" onclick="aa('jinri')">今日</a>
+							<a href="javascript:void(0)" onclick="aa('yizhou')">最近一周</a>
+							<a href="javascript:void(0)" onclick="aa('yiyue')">最近一月</a>
+							
+							<p style="display: inline-block; font-weight: 700; margin-left: 15px;">卡片类型</p>
+							<select style="width: 79px; height: 36px;">
+								<option>请选择</option>
+								<option>生活卡</option>
+								<option>老年卡</option>
+								<option>儿童卡</option>
+							</select>
+						</div>
+						<div class="admin06_6">
+							  <ul>
+							<li>创建时间</li>
+							<li>交易类型|名称</li>
+							<li>交易方</li>
+							<li>金额（元）</li>
+							<li>交易状态</li>
+							<li>操作</li>
+						</ul>
+						</div>
+						
+						<!-- 分页-->
+		          	    	  	   <div class="list"></div>
+		          	    	  	   <div class="setPageDiv">
+   <div class="Pagination"  id="pagination"></div>
+</div>
+							
+							
+						
+						
+				</div>
+
+			</div>
+		</div>
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+
+	</body>
+<script>
+		//分页和加载
+		$(function() {
+
+			$('.setPage').change(function() {
+
+				getMsg(parseInt($(this).val()))
+			})
+
+                
+
+			function getMsg(num) {
+
+				$.ajax({
+					url: 'data/jinri.json',
+					type: 'GET',
+					dataType: 'json',
+					success: function(data) {
+						//1.计算分页数量
+						var showNum = num;
+						var dataL = data.list.length;
+						var pageNum = Math.ceil(dataL / showNum);
+						$('.Pagination').pagination(pageNum, {
+							num_edge_entries: 1, //边缘页数
+							num_display_entries: 4, //主体页数
+							items_per_page: 1, //每页显示1项
+							prev_text: "上一页",
+							next_text: "下一页",
+							callback: function(index) {
+								
+								var html = '<ul>'
+
+								console.log(showNum * index + '~' + parseInt(showNum * index) + parseInt(showNum))
+								for(var i = showNum * index; i < showNum * index + showNum; i++) {
+									
+									if(i < dataL) {
+										
+
+										var charge_Id = data.list[i].charge_Id;
+										var manager = data.list[i].manager; 
+										var recharge = data.list[i].recharge;
+										var status = data.list[i].status;
+										var time = data.list[i].time;
+										var name = "网点充值";
+										var hh = "已完成"
+
+										html += "<li  style='overflow:hidden'>";
+
+										html += "<div class='detail'>";
+
+									
+
+										html += "<span class='price1'>" + time + "</span>"
+										html += "<span class='price2'>" + name + "</span>"
+										html += "<span class='price3'>" + manager + "</span>"
+										html += "<span class='price4'>" + recharge + "</span>"
+										html += "<span class='price5'>" + hh + "</span>"
+										html += "<span class='price6'>" + hh + "</span>"
+
+										html += "</div></li>";
+										
+
+									}
+								}
+								html += "<p style='margin-left:313px'>今日会员总消费" + manager + "元</p>"
+								html += '</ul>';
+
+								$('.list').html(html)
+							}
+						})
+
+					}
+				})
+			}
+			getMsg(8)
+
+		})
+	</script>
+</html>

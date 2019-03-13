@@ -1,0 +1,22 @@
+
+{
+	"address": "吉林白城",
+	"card_Id": 4,
+	"card_Number": 15,
+	"cardtype": "生活卡",
+	"creat_Time": "2016-11-24-05:00:00",
+	"email": "123@163.com",
+	"level": null,
+	"money": 1000,
+	"number": "220822199201025735",
+	"occupation": "java工程师",
+	"password": "1234",
+	"r_id": 3,
+	"realname": "赵云鹤",
+	"report_Time": "2016-12-19-01:41:34",
+	"sex": "男",
+	"spell_Time": "2016-10-20-12:00:00",
+	"status": null,
+	"tel": "18137786176",
+	"written_Time": "2016-12-19-03:22:02"
+}

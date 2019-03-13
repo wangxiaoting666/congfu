@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<!-- 引入 echarts.js -->
+		<script src="js/echarts.min.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
+         <!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>
+		<style type="text/css">
+			/*收益报表*/
+			
+			.bb_innerR03 {
+				/*width: 806px;
+				height: 803px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;*/
+				width:806px; height: 803px;float:left;margin-left: 10px; overflow: hidden;margin-top:10px;
+			}
+			
+			.b03_0 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.b03_1 {
+				height: 35px;
+				border-bottom: 1px solid #CCCCCC;
+				margin: 22px 0 0 10px;
+			}
+			
+			.b03_1 a {
+				
+				/*margin-bottom: 8px;*/
+			}
+			
+			.b03_2 {
+				height: 411px;
+				margin-bottom: 8px;
+			}
+			
+			.b03_3 {
+				height: 45px;
+				margin-left: 70px;
+			}
+			
+			.b03_3 a {
+				margin-right: 25px;
+			}
+			
+			.b03_4 {
+				height: 98px;
+				margin-left: 282px;
+			}
+			
+			.b03_4 span {
+				font-size: 30px;
+				color: #B20007;
+			}
+			
+			.b03_5 {
+				width: 340px;
+				height: 47px;
+				border: 1px solid #CCCCCC;
+				font-size: 20px;
+				text-align: center;
+				line-height: 38px;
+				margin-left: 229px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--个人中心加天气预报-->
+		<div class="personal">
+			<div class="personal-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">个人中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">18895731936</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="inner_personal">
+			<div class="aa">
+				<div id="leftmenu0">
+					<li><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="dealNote.html">交易记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="noteAdd.html">充值记录</a>
+					</li>
+					<li><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="personMessage.html">账户信息</a>
+					</li>
+					<li>
+						<a href="certificationMessage.html">实名认证</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="cardManage.html">卡片管理</a>
+					</li>
+					<li><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="cardApplication.html">卡片申请</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a>商家入驻申请</a>
+					</li>
+
+					<li><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="safeTactic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="serviceReminder.html">提醒服务</a>
+					</li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+			<!--右边内容-->
+
+			<div class="bb_innerR03">
+				<div class="b03_0"><img src="img/per_yzd.png" /></div>
+
+				<div class="b03_1">
+					<a style="margin-right: 268px;">11月账单</a>
+					<a>2016年11月1日-2016年12月1日</a>
+				</div>
+				<div class="b03_2">
+					<!--月账单的图表统计-->
+					<!--<img src="img/person_yzd.png">-->
+						<div id="main" style=" width:300px;height:360px; float:left; margin:30px 0 0 80px;"></div>
+				<script type="text/javascript">
+						function aa() {
+							// 路径配置
+
+							// 使用
+
+							// 基于准备好的dom，初始化echarts图表
+							var myChart = echarts.init(document.getElementById('main'));
+
+							option = {
+
+																		title: {
+																			text: '月消费总额占比',
+								
+																			x: 'center',
+																			y: 'top',
+								
+																		},
+
+								tooltip: {
+									trigger: 'item',
+									formatter: "{a} <br/>{b}: {c} ({d}%)"
+								},
+								legend: {
+									orient: 'vertical',
+									x: 'left',
+									data: ['农贸', '超市', '购物']
+								},
+								series: [{
+									name: '',
+									type: 'pie',
+									radius: ['50%', '70%'],
+									avoidLabelOverlap: false,
+									label: {
+										normal: {
+											show: false,
+											position: 'center'
+										},
+										emphasis: {
+											show: true,
+											textStyle: {
+												fontSize: '30',
+												fontWeight: 'bold'
+											}
+										}
+									},
+									labelLine: {
+										normal: {
+											show: false
+										}
+									},
+									data: [
+
+										{
+											value: 1234,
+											name: '农贸'
+										}, {
+											value: 1135,
+											name: '超市'
+										}, {
+											value: 1548,
+											name: '购物'
+										}
+									]
+								}]
+							};
+
+							// 为echarts对象加载数据 
+							myChart.setOption(option);
+
+							//通过Ajax获取数据  
+							$.ajax({
+								type: 'POST',
+								url: 'xxxxxx', //ajax请求的url链接
+								dataType: 'json', //数据格式
+								success: function(json) {
+
+								}
+							});
+						}
+						aa();
+					</script>
+					<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+					<div id="maintwo" style="width: 400px; height:350px; float: left;"></div>
+					<!-- ECharts单文件引入 -->
+
+					<script type="text/javascript">
+						function bb() {
+
+							// 使用
+
+							// 基于准备好的dom，初始化echarts图表
+							var myChart = echarts.init(document.getElementById('maintwo'));
+
+							option = {
+								title: {
+									text: '月消费总额',
+									x: 'center',
+									y: 'bottom'
+								},
+
+								tooltip: {
+									trigger: 'item',
+									formatter: "{a} <br/>{b} : {c} ({d}%)"
+								},
+
+								series: [{
+									name: '',
+									type: 'pie',
+									radius: '55%',
+									center: ['50%', '60%'],
+									data: [
+
+										{
+											value: 2314,
+											name: '农贸'
+										}, {
+											value: 1135,
+											name: '超市'
+										}, {
+											value: 1548,
+											name: '购物'
+										}
+									],
+									itemStyle: {
+
+										emphasis: {
+											shadowBlur: 10,
+											shadowOffsetX: 0,
+											shadowColor: 'rgba(0, 0, 0, 0.5)'
+										}
+									}
+								}]
+
+							};
+
+							// 为echarts对象加载数据 
+							myChart.setOption(option);
+
+							//通过Ajax获取数据  
+							$.ajax({
+								type: 'POST',
+								url: 'xxxxxx', //ajax请求的url链接
+								dataType: 'json', //数据格式
+								success: function(json) {
+
+								}
+							});
+
+						}
+						bb();
+					</script>
+				
+				
+				</div>
+				<div class="b03_3">
+					<a>11月消费：800元</a>
+					<a>农贸消费：432元</a>
+					<a>超市消费：218元</a>
+					<a>购物消费：159元</a>
+				</div>
+				<div class="b03_4">
+					<a>当前余额:</a><span>45元</span></div>
+				<div class="b03_5">
+					<a href="个人中心-充值记录.html">立即充值</a>
+				</div>
+
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商家管理</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/admin.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<!--分页-->
+	  <link rel="stylesheet" href="css/pagination.css"/>
+	  <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.pagination.js"></script>
+
+		<style type="text/css">
+			
+			
+			.admin_main_innerR06 {
+				width: 806px;
+				height:730px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			
+			/*.admin_main_innerR06 p {
+				margin-right: 8px;
+				display: inline-block;
+			}*/
+			
+			.admin06_1 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.admin06_2 { width: 783px; height: 100px; background:#f5f5f5; border: 1px solid #CCCCCC; margin:11px 0 0 13px;}
+			.admin06_3 {/*width: 362px;*/ height: 99px; float: left;}
+			
+			.admin06_3 a{ width: 92px; height: 35px; margin:27px 0 0 19px; display: inline-block; color: #FFFFFF;  background: #B20007; line-height: 31px; text-align: center;}
+			.admin06_4 {float: left;  margin: 27px 0 0 35px ; }
+		
+			.admin06_4 select{ width: 80px;  height: 34px;}
+			
+			
+			.admin06_5 { float: left; border: 1px solid #CCCCCC;}
+			.admin06_6 {width: 783px; height: 39px; border: 1px solid #CCCCCC; margin-left: 13px;border-top: none;}
+			.admin06_6 li{ width: 148px; float: left; text-align: center; font-weight: 900; line-height: 35px;}
+			   /*拼接后的数据样式*/
+			
+			.detail span {
+				display: inline-block;
+				width: 90px;
+			}
+			
+			.detail .price0 {
+				width: 48px;
+				text-align: center;
+			}
+			
+			.detail .price1 {
+				width: 121px;
+			}
+			
+			.detail .price2 {
+				width: 96px;
+			}
+			
+			.detail .price3 {
+				margin-left: 5px;
+				width: 147px;
+			}
+			
+			.detail .price4 {
+				width: 219px;
+			}
+			
+			.detail .price5 {
+				width: 120px;
+			}
+			
+			.detail .price6 {
+				margin-right: 25px;
+				width: 72px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('admin-header-footer.html  #header_wrap');
+				$('#footer01').load('admin-header-footer.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body onload="aa('JIAOYI')">
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="inner_admin">
+			<div class="aa">
+				<div id="leftmenu0">
+				<li style="margin-top: 15px;"><img src="img/admin-01.png"/></li>
+				<li ><a href="adminManagemant.html">会员管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminBussinessManage.html">商家管理</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-02.png"/></li>
+				<li ><a href="adminCardmanage.html">卡片管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminCardmanageCashnote.html">现金充值</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-03.png"/></li>
+				<li ><a href="adminDetailmanageNoterecord.html">会员交易</a></li>
+				<li   style="border-bottom: 1px solid #CCCCCC;"><a href="adminDetailmanageBusdealrecord.html">商家交易</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-04.png"/></li>
+				<li ><a href="adminNewsactivy.html">新闻活动</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="serviceReminder.html">账户设置</a></li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--商家管理-->
+				<div class="admin_main_innerR06">
+					
+						<div class="admin06_1"><img src="img/busadmin.png" /></div>
+						<div class="admin06_2">
+							<div class="admin06_3">
+								 <a href="adminBussinessManageRegister.html">商家注册</a>
+								 <a  href="adminBussinessManageInformmodiy.html">信息修改</a>
+								 
+							</div>
+							<div class="admin06_4">
+								<p style="float: left; margin-top: 10px;margin-right: 19px;">商家检索</p>
+								<div class="admin06_5">
+									<input type="text"  placeholder="请输入地址，手机号，姓名" style="width: 207px; height: 33px; border: none;  "/>
+									<input type="button" value="查询"  onclick="aa('2 JIAOYI')"  style="width:68px; height: 33px; background: #B20007; color: #FFFFFF; border: none;"/>
+								</div>
+								<div style="float:left; ">
+									<p style="float:left;  font-weight: 800; margin:11px 5px 0 10px;">区域</p>
+									<select>
+										 <option>请选择</option>
+										 <option>请选择</option>
+										 <option>请选择</option>
+									</select>
+								</div>
+							</div> 
+						</div>
+						
+						<div class="admin06_6">
+							  <ul>
+							<li>商家名称</li>
+							<li style="width: 73px;">姓名</li>
+							<li style="width: 173px;">手机号</li>
+							<li style="width: 191px;">身份证号</li>
+							<li>注册时间</li>
+							
+						</ul>
+						</div>
+						
+						<!-- 分页-->
+		          	    	  	   <div class="list"></div>
+		          	    	  	   <div class="setPageDiv">
+   <div class="Pagination"  id="pagination"></div>
+</div>
+							
+							
+						
+						
+				</div>
+
+			</div>
+		</div>
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+
+	</body>
+<script>
+function aa(id1) {
+		//弹出框上的分页
+		$(function() {
+
+			$('.setPage').change(function() {
+
+				getMsg(parseInt($(this).val()))
+			})
+
+			function getMsg(num) {
+				$.ajax({
+					url: "data/bussinessmanage.json",
+					type: 'GET',
+					dataType: 'json',
+					success: function(data) {
+						var sun1 = data;
+						//1.计算分页数量
+						var showNum = num;
+						var dataL = data.list.length;
+						var pageNum = Math.ceil(dataL / showNum);
+						//var address = data.list[0].bus.address;
+						// var bus_Id=data.list[0].bus.bus_Id; 
+						//   var money=data.list[0].bus.money;
+						$('.Pagination').pagination(pageNum, {
+							num_edge_entries: 1, //边缘页数
+							num_display_entries: 4, //主体页数
+							items_per_page: 1, //每页显示1项
+							prev_text: "上一页",
+							next_text: "下一页",
+							callback: function(index) {
+								var aaaaa = index;
+								console.log(index);
+								var html = '<ul>'
+
+								console.log(showNum * index + '~' + parseInt(showNum * index) + parseInt(showNum))
+								for(var i = showNum * index; i < showNum * index + showNum; i++) {
+									var qqqq = dataL;
+									console.log(i)
+									if(i < dataL) {
+										var nums = data.list[i].nums;
+										var name = data.list[i].name;
+										var phone = data.list[i].phone;
+										var charge = data.list[i].charge;
+									//	var status = data.list[i].status;
+
+										//var yue = data.list[i].yue;
+										var time = data.list[i].time;
+										//                                   var name="网点充值";
+										var hh = "<input type='checkbox'  name='interest' value='like' style='margin-left:21px'>"
+										html += "<li >";
+
+										html += "<div class='detail'>";
+										html += "<span class='price0'>" + hh + "</span>"
+										html += "<span class='price1'>" + nums + "</span>"
+										html += "<span class='price2'>" + name + "</span>"
+										html += "<span class='price3'>" + phone + "</span>"
+										html += "<span class='price4'>" + charge + "</span>"
+									//	html += "<span class='price5'>" + status + "</span>"
+											//      html += "<span class='price6'>" + yue + "</span>"
+										html += "<span class='price7'>" + time + "</span>"
+
+										html += "</div></li>";
+									}
+								}
+								html += '</ul>';
+								$('.list').html(html)
+							}
+						})
+
+					}
+				})
+			}
+			getMsg(8)
+
+		})
+	}
+	</script>
+</html>

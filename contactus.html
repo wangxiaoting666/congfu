@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<style>
+			.banner {
+				background: url(img/index_lxwm.png) no-repeat center;
+				overflow: hidden;
+				height: 487px;
+				max-width: 100%;
+				/*height:auto;*/
+				background-size: cover;
+			}
+			
+			.hot4 {
+				height: 400px;
+			}
+			
+			.hot4 .inner_hot4 {
+				width: 758px;
+				margin: auto;
+			}
+			
+			.inner_hot4 h3 {
+				margin-top: 111px;
+				font-size: 32px;
+				margin-bottom: 34px;
+			}
+			
+			.inner_hot4 p {
+				font-size: 15px;
+				line-height: 24px;
+			}
+		</style>
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="banner">
+			<!--<img src="img/index_lxwm.png">--></div>
+
+		<div class="hot4">
+			<div class="inner_hot4">
+				<h3>商务合作</h3>
+				<p>如果您是超市、商场、农贸市场等负责人，想与聪付钱包合作，请您登陆， 提交相关企业 资质及合作需求，或致电商户客服，我们将高效处理。
+				</p>
+			</div>
+		</div>
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+</html>

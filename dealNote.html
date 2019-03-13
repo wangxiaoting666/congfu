@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		
+
+		<!--分页-->
+		<link rel="stylesheet" href="css/pagination.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.pagination.js"></script>
+		<!--日历-->
+		<script src="js/jquery.page.js"></script>
+		<script src="js/Calendar.js"></script>
+		
+		<!--jQuery自动定位当地天气预报代码-->
+		<!--<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>-->
+		
+
+		<style type="text/css">
+
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('personal-header-footer.html #header_wrap');
+				$('#footer01').load('personal-header-footer.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body onload="aa('JIAOYI')">
+		<!--加载第一个接口-->
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--个人中心加天气预报-->
+		<div class="personal">
+			<div class="personal-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">个人中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">18895731936</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		<div class="inner_personal">
+			<div class="aa">
+				<div id="leftmenu0">
+					<li><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="dealNote.html">交易记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="noteAdd.html">充值记录</a>
+					</li>
+					<li><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="personMessage.html">账户信息</a>
+					</li>
+					<li>
+						<a href="certificationMessage.html">实名认证</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="cardManage.html">卡片管理</a>
+					</li>
+					<li><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="cardApplication.html">卡片申请</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a>商家入驻申请</a>
+					</li>
+
+					<li><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="safeTactic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="serviceReminder.html">提醒服务</a>
+					</li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<div class="personal_main_innerR01">
+					<div class="personal_main_innerRS01">
+						<h3></h3>
+					</div>
+					<div class="personal_main_innerRZ01">
+						<div class="div1">
+							<p>创建日期</p>
+							<!-- 日历 -->
+							<input type="text" placeholder="2012-12-12" name="starttime control_date" onfocus="MyCalendar.SetDate(this)" id="control_date" size="10" maxlength="10" onClick="new Calendar().show(this);" readonly>
+							<input type="text" placeholder="2012-12-12" name="endtime control_date2" onfocus="MyCalendar.SetDate(this)" id="control_date2" size="10" maxlength="10" onClick="new Calendar().show(this);" readonly>
+
+							<a  onclick="aa('2 JIAOYI')">今日</a>
+							<a href="javascript:void(0)" onclick="aa('3 JIAOYI')">最近一周</a>
+							<a href="javascript:void(0)" onclick="aa('4 JIAOYI')">最近一月</a>
+						</div>
+						<div>
+							<p>交易类型</p>
+							<a>所有</a>
+							<a>超市购物</a>
+							<a>农贸购物</a>
+							<a>商场购物</a>
+							<a>交通出行</a>
+							<a>娱乐旅游</a>
+
+						</div>
+
+						<div>
+							<p>交易状态</p>
+							<a>全部</a>
+							<a>已完成</a>
+							<a>退款中</a>
+							<a>已关闭</a>
+						</div>
+					</div>
+
+					<div class="p01">
+						<ul>
+							<li>创建时间</li>
+							<li>交易类型|名称</li>
+							<li>交易方</li>
+							<li>金额（元）</li>
+							<li>交易状态</li>
+							<li>操作</li>
+						</ul>
+					</div>
+					<!-- 分页-->
+					<div class="list">
+					</div>
+					<div class="setPageDiv">
+
+						<div class="Pagination" id="pagination"></div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>	
+						
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+	<script>
+ function aa(id1){
+ 	 //分页
+$(function(){
+      
+        $('.setPage').change(function(){
+
+            getMsg(parseInt($(this).val()))
+        })
+
+        function getMsg(num){
+            $.ajax({
+              url: 'data/' + id1 + '.json',
+                type:'GET',
+                dataType:'json',
+                success:function(data){
+                		var sun1 = data;
+                    //1.计算分页数量
+                    var showNum=num;
+                    var dataL=data.list.length;
+                    var pageNum=Math.ceil(dataL/showNum);
+                    //var address = data.list[0].bus.address;
+                  // var bus_Id=data.list[0].bus.bus_Id; 
+                     //   var money=data.list[0].bus.money;
+                    $('.Pagination').pagination(pageNum,{
+                        num_edge_entries: 1, //边缘页数
+                        num_display_entries: 4, //主体页数
+                        items_per_page: 1, //每页显示1项
+                        prev_text: "上一页",
+                        next_text: "下一页",
+                        callback:function(index){
+                        	var aaaaa = index;
+                        	console.log(index);
+                            var html='<ul>'
+
+                            console.log(showNum*index+'~'+parseInt(showNum*index)+parseInt(showNum))
+                            for(var i = showNum*index; i < showNum*index+showNum;i++){
+                            		var qqqq = dataL;
+                                console.log(i)
+                                if(i<dataL){
+                                     var address = data.list[i].bus.address;
+                                     var bus_Id=data.list[i].bus.bus_Id; 
+                                     var money=data.list[i].bus.money;
+                                     
+                                     
+                                     var cost_Id=data.list[i].cost_Id;
+                                     
+                                     var person=data.list[i].person;
+//                                   var name="网点充值";
+                                     var hh = "已完成"
+                                      html += "<li >";
+
+                                       
+                                        html += "<div class='detail'>";
+                                        
+                                        html += "<span class='price1'>" + address + "</span>"
+                                        html += "<span class='price2'>" + money  + "</span>"
+                                        html += "<span class='price3'>" + bus_Id + "</span>"
+                                        html += "<span class='price4'>" +  cost_Id + "</span>"
+                                        html += "<span class='price5'>" +  person + "</span>"
+                                        html += "<span class='price6'>" + hh + "</span>"
+                                        
+                                        
+                                        html += "</div></li>";
+                                }
+                            }
+                            html+='</ul>';
+                            $('.list').html(html)
+                        }
+                    })
+                    
+                }
+            })
+        }
+        getMsg(8)
+     
+})
+}
+ </script>
+
+</html>

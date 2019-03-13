@@ -1,0 +1,91 @@
+{
+	"list": [
+		{
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 1234,
+			"status": null,
+			"time": "2017-5-20-05:37"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 502,
+			"status": null,
+			"time": "2017-5-20-05:37"
+		}, {
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 400,
+			"status": null,
+			"time": "2017-5-20-05:37"
+		},   {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 222,
+			"status": null,
+			"time": "2017-5-20-05:33"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 5896,
+			"status": null,
+			"time": "2017-5-20-05:34"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, 
+		{
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, 
+		{
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-20-10:04"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐家汇站点",
+			"recharge": 520,
+			"status": null,
+			"time": "2017-5-20-10:07"
+		}
+	]
+}

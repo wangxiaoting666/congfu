@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/businessman.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<link rel="stylesheet" type="text/css" href="css/cxcalendar.css" />
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<!--<script src="js/businessman.js"></script>-->
+
+		<!--日历-->
+		<script src="js/rili.js"></script>
+		
+		<!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>
+		<!--js富文本编辑器-->
+		<!--<link rel="stylesheet" type="text/css" href="css/summernote.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <script src="js/summernote.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>-->
+ 
+ 
+ 
+ <!--<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script> 
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>-->
+           
+		<style type="text/css">
+			/*活动发布*/
+			
+			.personal_main_innerR06 {
+				width: 806px;
+				height: 892px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			
+			.personal_main_innerR06 p {
+				margin-right: 8px;
+				display: inline-block;
+			}
+			
+			.p06_1 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.p06_2 {
+				margin: 20px 0 10px 16px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+			}
+			
+			.p06_3 {
+				border-top: 1px solid #CCCCCC;
+				;
+			}
+			
+			.p06_3 div {
+				margin-left: 59px;
+			}
+			
+			.p06_3_1 {
+				margin-top: 33px;
+				margin-bottom: 22px;
+			}
+			
+			.p06_3_1 input {
+				width: 521px;
+				height: 36px;
+			}
+			
+			.p06_3_2 {
+				height: 117px;
+				position: relative;
+			}
+			
+			.p06_3_2 span {
+				position: absolute;
+				right: 133px;
+				bottom: 36px;
+			}
+			
+			.p06_3_3 {}
+			
+			.p06_3_3 input {
+				width: 138px;
+				height: 38px;
+				background: url(img/p_rili.png) no-repeat right;
+				border: none;
+				border: 1px solid #CCCCCC;
+				margin-bottom: 23px;
+			}
+			
+			.p06_3_4 {
+				position: relative;
+			}
+			
+			.p06_3_5 {
+				margin: 11px 0 37px 0px;
+			}
+			
+			.p06_3_5 input {
+				margin-left: 164px;
+			}
+			
+			.p06_3_6 {}
+			
+			.p06_3_6 input {
+				width: 338px;
+				height: 46px;
+				/*margin-bottom: 20px;*/
+				background: #b20007;
+				margin-left: 118px;
+				color: #FFFFFF;
+				font-size: 22px;
+			}
+			/*上传海报*/
+			
+			.inputFile {
+				width: 102px;
+				height: 32px;
+				opacity: 0;
+				overflow: hidden;
+				position: absolute;
+				z-index: 29;
+				right: 393px;
+				top: 12px;
+			}
+			
+			#preview2 {
+				width: 123px;
+				height: 80px;
+			}
+			
+			.opposite-img {
+				float: left;
+			}
+			
+			.add_ha {
+				margin-left: 10px;
+				margin-bottom: 50px;
+				width: 102px;
+				height: 32px;
+				background: #B20007;
+				text-align: center;
+				line-height: 28px;
+				color: #FFFFFF;
+				font-size: 14px;
+				border-radius: 5px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('bussinessl-header-footer.html #header_wrap');
+				$('#footer01').load('bussinessl-header-footer.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--商家中心加天气预报-->
+		<div class="businessman">
+			<div class="businessman-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">商家中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">ID：1234</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		<div class="inner_businessman">
+			<div class="aa">
+				<div id="leftmenu0">
+<li style="margin-top: 15px;"><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="bussinessgainrecording.html">收益记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessreport.html">收益报表</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="bussinessaccountinformation.html">账户信息</a>
+					</li>
+					<li>
+						<a href="bussinesssettledapplication.html">入驻申请</a>
+					</li>
+					<li>
+						<a href="bussinessactivitypromulgate.html">活动发布</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessactivitymanagement.html">活动管理</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="bussinesspresentapplication.html">提现申请</a>
+					</li>
+					<li>
+						<a href="bussinesspresentrecord.html">提现记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessbankcard.html">银行卡</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="bussinesssafetatic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessservicereminder.html">提醒服务</a>
+					</li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+			<!--右边内容-->
+			<!--卡片申请实名认证-->
+			<div class="personal_main_innerR06">
+				<form>
+					<div class="p06_1"><img src="img/sjzx_01.png" /></div>
+					<div class="p06_2">
+						<p>活动编辑</p>
+					</div>
+					
+					
+					<div class="p06_3">
+
+						<div class="p06_3_1">
+							<p>活动主题</p><input type="text" /></div>
+						<div class="p06_3_2">
+							<p>活动主题</p>
+							<!--上传海报-->
+							<div class="ai-item upload-id-img">
+
+								<div class="opposite-img">
+									<input type="file" id="img2" name="fm" class="inputFile">
+									<label for="img2">
+                            
+                            	<img src="img/sjzxhdfb.png" id="preview2">
+                        </label>
+								</div>
+								<p class="add_ha">添加海报</p>
+								<span>温馨提示：图片尺寸建议为900*525px,图片小于2M</span>
+
+							</div>
+						</div>
+
+						<div class="p06_3_3">
+							<p>活动时间</p>
+							
+
+							<input name="mydate" type="text" class="input_cxcalendar" style="width:136px;">—
+							<input name="mydate2" type="text" class="input_cxcalendar" style="width:136px; margin-right: 59px;">
+							活动类型<select style="width: 90px; height: 40px; margin-left: 20px;">
+								<option>请选择</option>
+								<option>商超活动</option>
+								<option>农贸活动</option>
+								<option>平台活动</option>
+								<option>新闻活动</option>
+							</select>
+						</div>
+
+						<div class="p06_3_4">
+							<p style="position: absolute; top: 10px; left: 3px;">活动详情</p>
+							<!--js实现富文本编辑器Bootstrap 富文本编辑器summernote -->
+								
+
+						</div>
+						<div class="p06_3_5"><input type="checkbox">同意
+							<a>《聪付服务协议》</a> 此处还可以输入1000字</div>
+						<div class="p06_3_6"><input type="submit" value="完成" /></div>
+
+					</div>
+
+				</form>
+			</div>
+		</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+	<!--<script type="text/javascript">
+		function setFontColor(obj) {
+			document.execCommand("forecolor", false, obj.value);
+		}
+
+		function setFontStyle(obj) {
+			document.execCommand(obj.value, false, null);
+		}
+
+		function setFontFamily(obj) {
+			document.execCommand("fontname", false, obj.value);
+		}
+	</script>-->
+	<script>
+		$('.input_cxcalendar').each(function() {
+			var a = new Calendar({
+				targetCls: $(this),
+				type: 'yyyy-mm-dd HH:MM',
+				wday: 2
+			}, function(val) {
+				console.log(val);
+			});
+		});
+		
+		 $(document).ready(function() {
+	        $('#editableText').summernote({
+	        	  width:657,
+	        	  height: 271,                 // set editor height
+	        	  minHeight: null,             // set minimum height of editor
+	        	  maxHeight: null,             // set maximum height of editor
+	        	  focus: true	                  // set focus to editable area after initializing summernote
+	        });
+	    }); 
+	</script>
+
+</html>

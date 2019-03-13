@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<style>
+			.banner {
+				background: url(img/index_ts.png) no-repeat center;
+				overflow: hidden;
+				min-height: 487px;
+				background-size: cover;
+			}
+			
+			.hot4 {
+				height: 400px;
+			}
+			
+			.hot4 .inner_hot4 {
+				width: 758px;
+				margin: auto;
+			}
+			
+			.inner_hot4 h3 {
+				margin-top: 111px;
+				font-size: 32px;
+				margin-bottom: 34px;
+			}
+			
+			.inner_hot4 p {
+				font-size: 15px;
+				line-height: 24px;
+			}
+		</style>
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="banner"></div>
+
+		<div class="hot4">
+			<div class="inner_hot4">
+				<h3>关于聪付</h3>
+				<p>建立具有先进水平的、以IC卡为核心的应用平台，连接社区、学校、小额消费等其它行业，最终成为成熟的， 提供以智能卡为交易载体，全 面应用于市域内公共交通，轨道交通以及其他小额支付交易领域的电子支付结算服务商，始终坚定不移地致力于运用高科技手段服务市政交通及小 额支付领域，推动城市化管理的快速发展，服务智慧城市建设
+				</p>
+			</div>
+		</div>
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+</html>

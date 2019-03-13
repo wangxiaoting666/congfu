@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/businessman.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>
+
+		<style type="text/css">
+			/*活动管理*/
+			
+			.businessman_main_innerR06 {
+				width: 806px;
+				height: 892px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			
+			.businessman_main_innerR06 p {
+				margin-right: 8px;
+				display: inline-block;
+			}
+			
+			.businessman06_1 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.businessman06_2 {
+				margin: 10px 0 20px 16px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				border-bottom: 1px solid #CCCCCC;
+				line-height: 34px;
+			}
+			
+			
+			/*新闻发布*/
+			.businessman06_3 {
+				width: 780px;
+				height: 94px;
+				margin-top: 23px;
+			}
+			
+			.businessman06_33 {
+				width: 780px;
+				height: 94px;
+			}
+			
+			.businessman06_333 {
+				width: 780px;
+				height: 94px;
+			}
+			
+			.businessman06_3333 {
+				width: 780px;
+				height: 94px;
+			}
+			
+			.businessman06_4 {
+				float: left;
+				font-size: 34px;
+				text-align: center;
+				line-height: 34px;
+				width: 91px;
+				height: 79px;
+				color: #CCCCCC;
+			}
+			
+			.businessman06_5 {
+				float: left;
+			}
+			
+			.businessman06_5 img {
+				margin-right: 20px;
+			}
+			
+			.businessman06_5 dt {
+				float: left;
+			}
+			
+			.businessman06_5 dd {
+				float: left;
+			}
+			
+			.businessman06_5 a {
+				line-height: 24px;
+			}
+			
+			.businessman06_6 {
+				float: left;
+				margin-left: 116px;
+			}
+			
+			.businessman06_6 span {
+				display: block;
+			}
+			
+			.businessman06_6 a {
+				line-height: 24px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--商家中心加天气预报-->
+		<div class="businessman">
+			<div class="businessman-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">商家中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">ID：1234</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		<div class="inner_businessman">
+			<div class="aa">
+				<div id="leftmenu0">
+
+				<li style="margin-top: 15px;"><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="bussinessgainrecording.html">收益记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessreport.html">收益报表</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="bussinessaccountinformation.html">账户信息</a>
+					</li>
+					<li>
+						<a href="bussinesssettledapplication.html">入驻申请</a>
+					</li>
+					<li>
+						<a href="bussinessactivitypromulgate.html">活动发布</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessactivitymanagement.html">活动管理</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="bussinesspresentapplication.html">提现申请</a>
+					</li>
+					<li>
+						<a href="bussinesspresentrecord.html">提现记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessbankcard.html">银行卡</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="bussinesssafetatic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessservicereminder.html">提醒服务</a>
+					</li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+			<!--右边内容-->
+			<!--卡片申请实名认证-->
+			<div class="businessman_main_innerR06">
+
+				<div class="businessman06_1"><img src="img/sjzxhdgl.png" /></div>
+				<div class="businessman06_2">
+					<p>活动管理</p>
+				</div>
+				<!--新闻-->
+				<div class="businessman06_3">
+					<div class="businessman06_4">1</div>
+					<div class="businessman06_5">
+						<dl>
+							<dt><img src="img/sjzxhd01.png"></dt>
+							<dd>
+								<h3>新店开业刷刷送豪礼</h3><br />
+								<a>时间：2016-11-08至2016-11-15</a>
+
+							</dd>
+
+						</dl>
+					</div>
+
+					<div class="businessman06_6">
+						<a style="margin-left: 77px;">上架</a>
+						<a>下架</a>
+						<a href="bussiness- activity promulgate.html">编辑|</a>
+						<a class="delect">删除</a>
+						<span>上一次编辑:<a>2016-11-08 20:22</a></span>
+
+					</div>
+				</div>
+
+				<div class="businessman06_33">
+					<div class="businessman06_4">2</div>
+					<div class="businessman06_5">
+						<dl>
+							<dt><img src="img/sjzxhd01.png"></dt>
+							<dd>
+								<h3>新店开业刷刷送豪礼</h3><br />
+								<a>时间：2016-11-08至2016-11-15</a>
+
+							</dd>
+
+						</dl>
+					</div>
+
+					<div class="businessman06_6">
+						<a style="margin-left: 77px;">上架</a>
+						<a>下架</a>
+						<a href="bussiness- activity promulgate.html">编辑|</a>
+						<a class="delect1">删除</a>
+						<span>上一次编辑:<a>2016-11-08 20:22</a></span>
+
+					</div>
+				</div>
+
+				<div class="businessman06_333">
+					<div class="businessman06_4">3</div>
+					<div class="businessman06_5">
+						<dl>
+							<dt><img src="img/sjzxhd01.png"></dt>
+							<dd>
+								<h3>新店开业刷刷送豪礼</h3><br />
+								<a>时间：2016-11-08至2016-11-15</a>
+
+							</dd>
+
+						</dl>
+					</div>
+
+					<div class="businessman06_6">
+						<a style="margin-left: 77px;">上架</a>
+						<a>下架</a>
+						<a href="bussiness- activity promulgate.html">编辑|</a>
+						<a class="delect2">删除</a>
+						<span>上一次编辑:<a>2016-11-08 20:22</a></span>
+
+					</div>
+				</div>
+
+				<div class="businessman06_3333">
+					<div class="businessman06_4">4</div>
+					<div class="businessman06_5">
+						<dl>
+							<dt><img src="img/sjzxhd01.png"></dt>
+							<dd>
+								<h3>新店开业刷刷送豪礼</h3><br />
+								<a>时间：2016-11-08至2016-11-15</a>
+
+							</dd>
+
+						</dl>
+					</div>
+
+					<div class="businessman06_6">
+						<a style="margin-left: 77px;">上架</a>
+						<a>下架</a>
+						<a href="bussiness- activity promulgate.html">编辑|</a>
+						<a class="delect3">删除</a>
+						<span>上一次编辑:<a>2016-11-08 20:22</a></span>
+
+					</div>
+				</div>
+   <!--新闻结束-->
+			</div>
+		</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+	<script>
+		$(function() {
+			$(".delect").click(function() {
+				//alert(1)
+				$(".businessman06_3").css('display', 'none')
+			})
+
+			$(".delect1").click(function() {
+				//alert(1)
+				$(".businessman06_33").css('display', 'none')
+			})
+
+			$(".delect2").click(function() {
+				//alert(1)
+				$(".businessman06_333").css('display', 'none')
+			})
+			$(".delect3").click(function() {
+				//alert(1)
+				$(".businessman06_3333").css('display', 'none')
+			})
+		})
+	</script>
+
+</html>

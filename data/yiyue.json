@@ -1,0 +1,47 @@
+{
+	"list": [
+		{
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 500,
+			"status": null,
+			"time": "2016-5"
+		}, {
+			"charge_Id": 0,
+			"manager": "宜山路站点",
+			"recharge": 510,
+			"status": null,
+			"time": "2016-5"
+		}, {
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 440,
+			"status": null,
+			"time": "2016-5"
+		},   {
+			"charge_Id": 0,
+			"manager": "宜山路站点",
+			"recharge": 224,
+			"status": null,
+			"time": "2016-5"
+		}, {
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 5096,
+			"status": null,
+			"time": "2016-5"
+		}, {
+			"charge_Id": 0,
+			"manager": "徐汇区站点",
+			"recharge": 1300,
+			"status": null,
+			"time": "2016-5"
+		}, {
+			"charge_Id": 0,
+			"manager": "宜山路站点",
+			"recharge": 250,
+			"status": null,
+			"time": "2016-5"
+		}
+	]
+}

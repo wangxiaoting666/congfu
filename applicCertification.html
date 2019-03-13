@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<!--下拉列表三级联动区-->
+		<script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+		<script src="js/Area.js" type="text/javascript"></script>
+		<script src="js/AreaData_min.js" type="text/javascript"></script>
+<script type="text/javascript">
+			$(function() {
+				initComplexArea('seachprov', 'seachcity', 'seachdistrict', area_array, sub_array, '44', '0', '0');
+			});
+
+			//得到地区码
+			function getAreaID() {
+				var area = 0;
+				if($("#seachdistrict").val() != "0") {
+					area = $("#seachdistrict").val();
+				} else if($("#seachcity").val() != "0") {
+					area = $("#seachcity").val();
+				} else {
+					area = $("#seachprov").val();
+				}
+				return area;
+			}
+
+			function showAreaID() {
+				
+				//地区码
+				var areaID = getAreaID();
+				//地区名
+				var areaName = getAreaNamebyID(areaID);
+				$("#input1").val("areaName");
+				return true;
+				alert("您选择的地区码：" + areaID + "      地区名：" + areaName);
+			}
+
+			//根据地区码查询地区名
+			function getAreaNamebyID(areaID) {
+				var areaName = "";
+				if(areaID.length == 2) {
+					areaName = area_array[areaID];
+				} else if(areaID.length == 4) {
+					var index1 = areaID.substring(0, 2);
+					areaName = area_array[index1] + " " + sub_array[index1][areaID];
+				} else if(areaID.length == 6) {
+					var index1 = areaID.substring(0, 2);
+					var index2 = areaID.substring(0, 4);
+					areaName = area_array[index1] + " " + sub_array[index1][index2] + " " + sub_arr[index2][areaID];
+				}
+				return areaName;
+			}
+		</script>
+		<style type="text/css">
+
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--个人中心加天气预报-->
+		<div class="personal">
+			<!-- <img src="img/personal.png" alt="" />-->
+		</div>
+		<div class="inner_personal">
+			<div class="aa">
+				<div id="leftmenu0">
+					<li style="margin-top: 15px;"><img src="img/businessman 02.png"/></li>
+				<li ><a href="dealNote.html">交易记录</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="noteAdd.html">充值记录</a></li>
+				<li style="margin-top: 15px;"><img src="img/businessman 03.png"/></li>
+				<li ><a href="personMessage.html">账户信息</a></li>
+				<li ><a href="certificationMessage.html">实名认证</a></li>
+				
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="cardManage.html">卡片管理</a></li>
+				<li style="margin-top: 15px;"><img src="img/businessman 04.png"/></li>
+				<li ><a href="cardApplication.html">卡片申请</a></li>
+				<li   style="border-bottom: 1px solid #CCCCCC;"><a>商家入驻申请</a></li>
+				
+				
+				<li style="margin-top: 15px;"><img src="img/businessman 05.png"/></li>
+				<li ><a href="safeTactic.html">安全策略</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="serviceReminder.html">提醒服务</a></li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--666666666666666666666666666-->
+				<!--卡片申请实名认证-->
+				<div class="personal_main_innerR06">
+<form >
+					<div class="p06_1"><img src="img/p_kpsq.png" /></div>
+					<div class="p06_2">实名认证</div>
+					<div class="p06_3"><img src="img/p_smrz.png" /></div>
+
+					<div class="p06_4">
+						<div  class="p06_411">
+							设置身份信息：<p>请务必准确填写本人身份信息，如信息不准确或不填写，<br /> 卡片将无法补办及挂失，隐私信息未经本人许可我们将严格保密
+							</p>
+						</div>
+						<div class="p06_412">真实姓名：<input type="text" style="width: 341px; height: 35px;" /> </div>
+						<div class="p06_413">性别：
+						<input id="man" type="radio" checked="checked" name="1"  />男&nbsp;&nbsp;&nbsp;<input id="woman" type="radio"  name="1"/>女</div>
+						<div class="p06_414"> 身份号码：<input type="text" style="width: 341px; height: 35px;" /></div>
+						<div class="p06_415"> 有效期：<input type="text" style="width: 182px; height: 35px;" /> <input type="checkbox" />长期有效</div>
+						<!-- <input type="submit" value="上传证件照"/><br />-->
+						<!--<div class="container">  
+                    <label>上传证件照，完成实名认证</label>  
+                    <input type="file" id="file_input" multiple/>  
+               </div> -->
+
+						<div class="ai-item upload-id-img" style="margin-left:268px; position: relative; margin-bottom: 77px;" >
+
+							<div class="opposite-img" style="margin-left: 40px;">
+								<input type="file" id="img2" name="fm" class="inputFile">
+								<label for="img2">
+                            
+                            	<img src="img/p_smrzs.png" id="preview2">
+                        </label>
+							</div>
+							<p style="display: block;">上传证件照，完成实名认证</p>
+							<!--<a style="">上传证件照</a>-->
+							<p class="add_ha">上传证件照</p>
+
+						</div>
+
+						<div class="p06_417"> 职业：<input type="text" style="width: 182px; height: 35px;" /> </div>
+						
+						<!--下拉列表三级联动区-->
+						
+						<select style="margin-left: 197px;" id="seachprov" name="seachprov" onChange="changeComplexProvince(this.value, sub_array, 'seachcity', 'seachdistrict');"></select>&nbsp;&nbsp;
+						<select id="seachcity" name="homecity" onChange="changeCity(this.value,'seachdistrict','seachdistrict');"></select>&nbsp;&nbsp;
+						<span id="seachdistrict_div"><select id="seachdistrict" name="seachdistrict"></select></span>
+						<!--<input hidden="true" id="areahidden"/>-->
+						<!--<input type="button" value="获取地区" onClick="showAreaID()" />-->
+						<input type="hidden" id="input1" name="input1"/>
+						
+						<div ><textarea></textarea></div>
+						<!--<a href="个人中心-卡片申请-取卡方式.html" target="_blank">-->
+							<div ><input type="submit" value="下一步" class="p06_4_x"  onClick="showAreaID()" id="mm"/></div>
+						<!--</a>-->
+					</div>
+</form>
+				</div>
+
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+</html>

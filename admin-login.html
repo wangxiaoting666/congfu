@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="stylesheet" type="text/css" href="css/main.css" />-->
+		<!--<link rel="stylesheet" type="text/css" href="css/com.css" />-->
+		<!--<link rel="stylesheet" type="text/css" href="css/login.css" />-->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<title>登录页面</title>
+
+		<style>
+			@charset "utf-8";
+			* {
+				word-wrap: break-word;
+			}
+			
+			html {
+				min-width: 1190px;
+				-webkit-text-size-adjust: none;
+			}
+			
+		
+			
+			body {
+				font: normal 14px/24px "微软雅黑";
+			}
+			/*登录注册的头部*/
+			
+			#header {
+				
+				height: 111px;
+			}
+			.header_inner{width: 1181px; margin: auto;}
+			.header_left {
+				/*width: 525px;*/
+				float: left;
+			}
+			
+			.header_left img {
+				float: right;
+				margin-top: 21px;
+			}
+			
+			.header_center {
+				color: #525898;
+				font-size: 24px;
+				border-bottom: 1px solid #CCCCCC;
+				float: left;
+				margin-left: 59px;
+				margin-top: 32px;
+			}
+			
+			.header_center h3 {
+				/*border-bottom: 1px solid #CCCCCC;*/
+				background: url(img/login-01.png ) no-repeat bottom;
+				
+				line-height: 38px;
+			}
+			
+			.header_right {
+				/*width: 417px;*/
+				float: left;
+				margin-top: 27px;
+				margin-left: 700px;
+			}
+			/*登录===========================*/
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			body {
+				font: 12px/1.5 Tahoma;
+			}
+			
+			#background {
+				height: 692px;
+				background: url(img/login-background.png) no-repeat;
+				background-size: cover;
+				overflow: hidden;
+			}
+			
+			#wrap {
+				width: 600px;
+				height: 470px;
+				margin: 150px auto;
+			}
+			
+			#tab {
+				height: 60px;
+				overflow: hidden;
+				zoom: 1;
+				background: #eeeeee;
+				border: 3px solid #ccc;
+			}
+			
+			#tab li {
+				float: left;
+				color: #666666;
+				width: 197px;
+				height: 60px;
+				cursor: pointer;
+				line-height: 54px;
+				text-align: center;
+				font-size: 22px;
+				font-family: "微软雅黑";
+			}
+			
+			/*#tab li.current {
+				color: #000;
+				background: #FFFFFF;
+			}*/
+			
+			#content {
+				border: 3px solid #CCCCCC;
+				border-top-width: 0;
+				width: 595px;
+				height: 415px;
+				background: #FFFFFF;
+				position: relative;
+			}
+			
+			#content ul {
+				line-height: 25px;
+				/*display: none;*/
+				margin: 0 30px;
+				padding: 10px 0;
+			}
+			/*表单的样式==========================================================*/
+			
+			.form {
+				width: 344px;
+				height: 303px;
+				margin: auto;
+				position: relative;
+			}
+			/* .form p{display: block; float: left; font-size: 13px;}*/
+			
+			.form a {
+				font-size: 13px;
+				color: #666666;
+				text-decoration: none;
+			}
+			
+			.phone_num {
+				margin-top: 45px;
+			}
+			
+			.phone_num,
+			.password_1,
+			.submit_1 {
+				width: 338px;
+				height: 45px;
+				margin-bottom: 8px;
+			}
+			
+			.yanzheng {
+				width: 180px;
+				height: 45px;
+				margin-bottom: 8px;
+			}
+			
+			.OK {
+				float: left;
+				margin-left: 85px;
+				margin-top: 8px;
+			}
+			
+			.submit_1 {
+				background: #FFFFFF;
+				border: 1px solid #CCCCCC;
+			}
+			/*验证码*/
+			/*form .form_act{
+	position: relative;
+}*/
+			
+			.po_form_act {
+				position: absolute;
+				left: 195px;
+				top: 157px;
+				;
+				line-height: 36px;
+			}
+			
+			.po_form_act .code {
+				width: 80px;
+				height: 45px;
+				border: 1px solid #ccc;
+				display: inline-block;
+				margin-right: 15px;
+				float: left;
+				background: #fff;
+				border-radius: 0;
+				color: #000;
+				text-align: center;
+				line-height: 34px;
+			}
+			
+			.po_form_act a {
+				float: left;
+			}
+			/*-----------------验证码结束*/
+			/*底部图标*/
+			
+			.iconfont {
+				height: 184px;
+				overflow: hidden;
+			}
+			
+			.iconfont .inner_icon {
+				width: 1196px;
+				margin: auto;
+			}
+			
+			.iconfont dl {
+				width: 300px;
+				float: left;
+				margin-top: 63px;
+				margin-left: 73px;
+			}
+			
+			.iconfont dl dt {
+				float: left;
+				margin-right: 10px;
+			}
+			
+			.iconfont dl dd {
+				float: left;
+				line-height: 24px;
+			}
+			/*footer*/
+#footer_wrap{height:119px; background: #dddddd; }
+ .footer_inner{width: 1106px; margin: auto;}
+  .left{float: left; /*margin: 25px  10px  0  411px; */  margin-top: 25px; }
+  .center{ float: left; font-size: 14px;  margin-top: 49px; margin-left: 20px; }
+  .right{ float:left; margin-top: 51px;  margin-left: 208px;}
+  .right a{ color: #000000; text-decoration: none;}
+			
+				/*弹出*/
+			.po_phone_num{display: none; color: #EC3E7D; position: absolute; right: -37px; top: 61px;}
+			
+			.po_password{display: none;color: #EC3E7D;position: absolute; right: -37px; top: 124px;}
+			/*.po_again_p{display: none;color: #EC3E7D;position: absolute; right: -37px; top: 235px;}*/
+			.form_act{display: none;color: #EC3E7D;position: absolute; right: -37px; top: 235px;}
+		</style>
+
+		<!--加载头部模板-->
+      	<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header');
+				$('#footer01').load('one_headerfooter.html  #footer');
+				
+			})
+		</script>
+
+	</head>
+
+	<body>
+		<!--加载头部模板
+		<div id="header01"></div>-->
+		<!--header-->
+		<div id="header">
+			<div class="header_inner">
+			<div class="header_left"><img src="img/header.png"></div>
+
+			<div class="header_center">
+				<h3>可视温暖在身边</h3>
+			</div>
+
+			<div class="header_right">
+				
+
+				<img src="img/header2.png" alt="">
+			</div>
+</div>
+		</div>
+
+		<!-- html代码begin -->
+		<div id="background">
+			<div id="wrap">
+				<ul id="tab">
+					<a href="personal-login.html"><li >个人登录</li></a>
+					<a href="bussiness-login.html"><li>商家登录</li></a>
+					<!--<li   style="color: #000;
+				background: #FFFFFF;"><a>管理员登录</a></li>-->
+				<a href="admin-login.html"><li style="color:#000; background:#ffffff">管理员登录</li></a>
+				</ul>
+				<div id="content">
+					
+
+					
+
+					<!--管理员登录-->
+					<ul>
+						<form class="form" action="adminIndex.html">
+							<input type="text" placeholder="用户登录" class="phone_num" autofocus name="manager.number" />
+							<input type="password" placeholder="密码登录" class="password_1" name="manager.password">
+							<!--验证码-->
+							<input type="text" placeholder="验证码" class="yanzheng" />
+							<div class="po_form_act">
+								<p class="code"></p>
+								<a href="javascript:void(0);">换一张</a>
+							</div>
+							<!--<input type="text"  placeholder="验证码"  class="yanzheng"/>-->
+
+							<input type="submit" value="登录" class="submit_1" />
+							<a href="find.html">忘记密码？</a>
+							<a href="personal-register.html" style="margin-left: 185px;">注册账户</a>
+						</form>
+						
+						<div class="po_phone_num">请输入正确的手机号码</div>
+
+<div class="po_password">输入不正确，至少六个</div>
+<div class="form_act">输入正确验证码</div>
+					</ul>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--三个图标的部分哦-->
+		<!--底部图标-->
+		<div class="iconfont">
+			<div class="inner_icon">
+				<dl>
+					<dt><img src="img/login_icon1.png" alt=""></dt>
+					<dd style="margin-right: 120px;">可视支付，余额随时看</dd>
+					<dd>使用更安心</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="img/login_icon2.png" alt=""></dt>
+					<dd style="margin-right: 120px;">数据分析，家人云查看</dd>
+					<dd>温暖在身边</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/login_icon3.png" alt=""></dt>
+					<dd style="margin-right: 120px;">商家入驻，审核优把关</dd>
+					<dd>使用更安全</dd>
+				</dl>
+			</div>
+		</div>
+
+		<!--加载尾部的内容
+		<div id="footer01"></div>-->
+		<!--footer-->
+			<div id="footer_wrap">
+			<div class="footer_inner">
+				 <div class="left"><img src="img/footer.png" alt="" /></div>
+			<div class="center">
+				<p>聪付版权所有：版权所有2016沪ICP证888888号2016聪付 使用聪付前必读聪付协议</p>
+			</div>
+			<div class="right">
+				<a href="servicecenter.html">帮助中心|</a>
+				<a href="tip.html">提建议</a>
+			</div>
+			</div>
+		</div>
+
+		<!-- html代码end -->
+		<!--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
+
+		<!--<script>
+			$(function() {
+				window.onload = function() {
+					var $li = $('#tab li');
+					var $ul = $('#content ul');
+
+					$li.click(function() {
+						var $this = $(this);
+						var $t = $this.index();
+						$li.removeClass();
+						$this.addClass('current');
+						$ul.css('display', 'none');
+						$ul.eq($t).css('display', 'block');
+					})
+				}
+			});
+		</script>-->
+
+	
+
+	</body>
+<script>
+	$(function(){
+		var juddge01=juddge02=juddge03=juddge04 =juddge05= false;
+		//1验证登录
+		$(".phone_num").blur(function(){
+			//alert(1)
+			var $phone_num = $(".phone_num").val();
+			var reg01 = /^1[3|4|5|7|8]\d{9}$/;//手机号
+			
+			if(reg01.test($phone_num)){
+			
+			console.log("手机号正确");
+			
+			$(".po_phone_num").css("display","none");
+			
+			juddge01 = true;
+		}else{
+			
+			$(".po_phone_num").css("display","block");
+			
+			juddge01 = false;
+		}
+			
+		})
+		
+
+		
+		
+		
+		
+		
+		
+		//2验证密码
+	$(".password_1").blur(function(){
+	      //alert(1)
+		var $password_1 = $(".password_1").val();
+		
+
+      var reg03=/^\w{6,16}$/;
+		
+	
+		
+		if(reg03.test($password_1)){
+			
+			console.log("密码正确");
+			
+			juddge02 = true;
+			
+			$(".po_password").css("display","none");
+		}else{
+			
+			$(".po_password").css("display","block");
+			
+			juddge02 = false;
+		}
+		
+		
+		})
+	
+	
+	
+	
+	//随机生成验证码
+	
+	function randomNum(){
+		
+		var str;//定义局部变量，供判断使用
+		
+		function randomCallback(){
+			
+			str="";
+			
+			var ranDom = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+			
+			//取出4位放到验证码位置
+
+			for(var i = 0; i < 4; i++){//将验证码限制为4位
+	
+				str += ranDom[Math.round(Math.random()*61)];
+	
+			}
+			//console.log(str);//测试通过可以产生4位随机字符
+			
+			$(".code").html(str);
+			
+			//console.log($("#code").html(str));
+			
+		}
+		randomCallback();
+		
+		//点击更换验证码
+	
+		$(".po_form_act").find("a").click(function(){
+			
+			//console.log(1);//点击事件测试通过
+			
+			randomCallback();//调用函数生成验证码
+		
+		})
+		
+		//鼠标离开时判断填写是否正确
+		
+		//3.验证码
+	
+		$('.yanzheng').blur(function(){
+		//alert(1)
+			
+			
+			
+			var $yanzheng  = $(".yanzheng").val();
+			
+			if(str == $yanzheng){
+				
+				console.log("验证码正确");
+				
+				juddge03=true;
+				
+				$(".form_act").css("display","none");
+			}else{
+				
+				
+				
+				$(".form_act").css("display","block");
+				
+				juddge03 = false;
+			}
+		})
+		
+		
+	}
+	
+	randomNum();
+	
+		
+	
+	
+	//判断是否符合注册条件，如果符合则注册，否则不能
+
+	$(".submit_1").click(function(){
+            
+		
+		
+		if(juddge01 && juddge02 &&juddge03){
+			alert("登录成功");
+			window.location.href="";
+			
+
+			
+		}else{
+			alert("请认真填写");
+		}
+
+	})
+		
+	})
+	</script>
+</html>

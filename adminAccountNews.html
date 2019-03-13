@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/admin.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<link rel="stylesheet" type="text/css" href="css/cxcalendar.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<!--日历-->
+		<script src="js/rili.js"></script>
+		<!--分页-->
+		<link rel="stylesheet" href="css/pagination.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.pagination.js"></script>
+		<style type="text/css">
+			.admin_main_innerR06 {
+				width: 806px;
+				/*height:730px;*/
+				height: 892px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			
+			.admin_main_innerR06 p {
+				margin-right: 8px;
+				display: inline-block;
+			}
+			
+			.admin06_1 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.admin06_2 {
+				margin: 10px 0 0px 16px;
+				font-weight: bold;
+				border-bottom: 1px solid #CCCCCC;
+				line-height: 37px;
+			}
+			
+			.admin06_3 {
+				margin: 30px 0 0 65px;
+			}
+			
+			.admin06_4 {
+				margin: 33px 0 22px 62px;
+			}
+			
+			.admin06_4 input {
+				width: 521px;
+				height: 36px;
+			}
+			
+			.admin06_5 {
+				margin: 33px 0 0 62px;
+				height: 117px;
+				position: relative;
+			}
+			
+			.admin06_5 span {
+				position: absolute;
+				right: 170px;
+				bottom: 36px;
+			}
+			/*上传海报*/
+			
+			.inputFile {
+				width: 102px;
+				height: 32px;
+				opacity: 0;
+				overflow: hidden;
+				position: absolute;
+				z-index: 29;
+				right: 435px;
+				top: 20px;
+			}
+			
+			#preview2 {
+				width: 123px;
+				height: 80px;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.opposite-img {
+				float: left;
+			}
+			
+			.add_ha {
+				margin: 20px 0 50px 10px;
+				width: 102px;
+				height: 32px;
+				background: #B20007;
+				text-align: center;
+				line-height: 28px;
+				color: #FFFFFF;
+				font-size: 14px;
+				border-radius: 5px;
+			}
+			
+			.admin06_6 {
+				margin: 0 0 22px 62px;
+			}
+			
+			.admin06_6 input {
+				width: 138px;
+				height: 38px;
+				background: url(img/p_rili.png) no-repeat right;
+				border: none;
+				border: 1px solid #CCCCCC;
+				margin-bottom: 23px;
+			}
+			/*.admin06_6 select{ width: 101px;
+			          height: 39px;}*/
+			
+			.admin06_7 {
+				position: relative;
+			}
+			
+			.admin06_8 {
+				margin: 11px 0 37px 0px;
+			}
+			
+			.admin06_8 input {
+				margin-left: 164px;
+			}
+			
+			.admin06_9 input {
+				width: 338px;
+				height: 46px;
+				margin-bottom: 20px;
+				background: #b20007;
+				margin-left: 118px;
+				color: #FFFFFF;
+				font-size: 22px;
+				font-weight: 800;
+			}
+			/*点击按钮,出现弹框*/
+			
+			.click {
+				margin-left: 21px;
+				width: 180px;
+				height: 36px;
+				border: 1px solid #CCCCCC;
+				text-align: center;
+				background: none;
+			}
+			
+			.click:hover{border: 1px solid #B20007;}
+			.white_content {
+				display: none;
+				position: relative;
+				position: absolute;
+				top: 10%;
+				left: 35%;
+				width: 811px;
+				height: 729px;
+				padding: 16px;
+				/*border: 3px solid orange;*/
+				background-color: white;
+				z-index: 1002;
+				overflow: auto;
+			}
+			/*弹框背景*/ 
+			
+			.black_overlay {
+				display: none;
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+				background-color: #cccccc;
+				z-index: 1001;
+				-moz-opacity: 0.8;
+				opacity: .80;
+				filter: alpha(opacity=80);
+			}
+			/*点击关闭弹窗*/
+			
+			.shut {
+				/*background: url(css/img/news02.png);*/
+				
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			/*弹窗内容里面的样式*/
+			
+			.popup_01 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.popup_02 {
+				width: 783px;
+				height: 70px;
+				background: #f5f5f5;
+				border: 1px solid #CCCCCC;
+				margin: 11px 0 0 13px;
+				padding-top: 34px;
+			}
+			
+			.popup_03 {
+				float: left;
+				margin-left: 56px;
+			}
+			
+			.popup_04 {
+				float: left;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.popup_05 {
+				float: left;
+				margin-top: 2px;
+			}
+			
+			.popup_06 {
+				float: left;
+				width: 126px;
+				height: 34px;
+				background: #B20007;
+				margin-left: 60px;
+				text-align: center;
+				color: #FFFFFF;
+				font-weight: 800;
+			}
+			
+			.popup_07 {
+				width: 783px;
+				height: 39px;
+				border: 1px solid #CCCCCC;
+				margin-left: 13px;
+				border-top: none;,
+			}
+			
+			.popup_07 li {
+				width: 125px;
+				float: left;
+				font-weight: 900;
+				line-height: 34px;
+				text-align: center;
+			}
+			/*拼接后的数据样式*/
+			
+			.detail span {
+				display: inline-block;
+				width: 90px;
+			}
+			
+			.detail .price0 {
+				width: 66px;
+				text-align: center;
+			}
+			
+			.detail .price1 {
+				width: 88px;
+			}
+			
+			.detail .price2 {
+				width: 75px;
+			}
+			
+			.detail .price3 {
+				margin-left: 5px;
+				width: 144px;
+			}
+			
+			.detail .price4 {
+				width: 110px;
+			}
+			
+			.detail .price5 {
+				width: 120px;
+			}
+			
+			.detail .price6 {
+				margin-right: 25px;
+				width: 72px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('admin-header-footer.html  #header_wrap');
+				$('#footer01').load('admin-header-footer.html  #footer_wrap');
+
+			})
+		</script>
+		
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="inner_admin">
+			<div class="aa">
+				<div id="leftmenu0">
+					<li style="margin-top: 15px;"><img src="img/admin-01.png"/></li>
+				<li ><a href="adminManagemant.html">会员管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminBussinessManage.html">商家管理</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-02.png"/></li>
+				<li ><a href="adminCardmanage.html">卡片管理</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="adminCardmanageCashnote.html">现金充值</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-03.png"/></li>
+				<li ><a href="adminDetailmanageNoterecord.html">会员交易</a></li>
+				<li   style="border-bottom: 1px solid #CCCCCC;"><a href="adminDetailmanageBusdealrecord.html">商家交易</a></li>
+				<li style="margin-top: 15px;"><img src="img/admin-04.png"/></li>
+				<li ><a href="adminNewsactivy.html">新闻活动</a></li>
+				<li  style="border-bottom: 1px solid #CCCCCC;"><a href="serviceReminder.html">账户设置</a></li>
+
+				</div>
+
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+				
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--新闻活动活动发布-->
+				<div class="admin_main_innerR06">
+
+					<div class="admin06_1"><img src="img/ad-news.png" /></div>
+					<div class="admin06_2">
+						<p>活动编辑</p>
+					</div>
+
+					<div class="admin06_3">
+						<p>主办方</p>
+						<input id="pin" type="radio" checked="checked" name="1" />平台综合新闻活动
+						<input id="shang" type="radio" checked="checked" name="1" style="margin-left:74px;" />商家新闻活动
+						<input type="button" value="请选择商家" class="click" onclick="document.getElementById('light').style.display='block'; document.getElementById('fade').style.display='block'" />
+					</div>
+					<!--弹框-->
+					<div id="light" class="white_content">
+						<!--<a href="javascript:void(0)" class="shut" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+		Close</a>-->
+
+						<div class="shut" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+							<img src="css/img/news02.png" />
+						</div>
+
+						<br>
+						<!--弹窗内容的样式-->
+						<form>
+							<div class="popup_01"><img src="img/pop01.png" /></div>
+
+							<div class="popup_02">
+
+								<div class="popup_03">
+									<p style="float: left; margin-top: 9px; font-weight: 800;">商家检索</p>
+
+									<div class="popup_04">
+										<input type="text" placeholder="请输入地址，手机号，姓名" style="width: 207px; height: 33px; margin-left:5px; border: none; " />
+										<input type="button" value="查询" style="width:68px; height: 36px; background: #B20007; color: #FFFFFF; font-weight: 600; border: none;" />
+									</div>
+								</div>
+
+								<div class="popup_05">
+									<p style="margin-left: 18px; font-weight: 800;">区域</p>
+									<select style="width: 83px; height: 32px;">
+										<option>请选择</option>
+										<option>上海</option>
+										<option>北京</option>
+									</select>
+								</div>
+								<div>
+									<input type="submit" value="确定选择" class="popup_06" />
+								</div>
+
+							</div>
+
+							<div class="popup_07">
+								<ul>
+									<li style="margin-left: 60px; width:56px ; ">卡号</li>
+									<li>商品名称</li>
+									<li>姓名</li>
+									<li>手机号</li>
+									<li>身份证号</li>
+									<li>注册时间</li>
+
+								</ul>
+							</div>
+
+							<!--分页和ajax加载的内容拼接过来的-->
+							<div class="list"></div>
+							<div class="setPageDiv">
+								<div class="Pagination" id="pagination"></div>
+							</div>
+						</form>
+					</div>
+
+					<!--弹框背景-->
+					<div id="fade" class="black_overlay">123</div>
+					<!--弹框结束-->
+
+					<div class="admin06_4">
+						<p>活动主题</p><input type="text" /></div>
+
+					<div class="admin06_5">
+						<p style="float: left;">活动主题</p>
+						<!--上传海报-->
+						<div class="ai-item upload-id-img" style="float: left;">
+
+							<div class="opposite-img">
+								<input type="file" id="img2" name="fm" class="inputFile">
+								<label for="img2">
+                            
+                            	<img src="img/sjzxhdfb.png" id="preview2">
+                        </label>
+							</div>
+							<p class="add_ha">添加海报</p>
+							<span>温馨提示：图片尺寸建议为900*525px,图片小于2M</span>
+
+						</div>
+					</div>
+
+					<div class="admin06_6">
+						<p>活动时间</p>
+
+						<input name="mydate" type="text" class="input_cxcalendar" style="width:136px;">—
+						<input name="mydate2" type="text" class="input_cxcalendar" style="width:136px; margin-right: 59px;"> 活动类型
+						<select style="width: 101px; height: 40px; margin-left: 20px;">
+							<option>请选择</option>
+							<option>商超活动</option>
+							<option>农贸活动</option>
+							<option>平台活动</option>
+							<option>新闻活动</option>
+						</select>
+					</div>
+
+					<div class="admin06_7">
+						<p style="position: absolute; top: 10px; left: 3px;">活动详情</p>
+						<!--js实现富文本编辑器Bootstrap 富文本编辑器summernote -->
+						<!--<div id="editableText"></div>
+								<input style="display:none;" type="text" name="activitycontent" id="activitycontent"/>
+								<input style="display:none;" type="text" name="nameadmin" id="nameadmin" value='${nameadmin}'/>
+								<input style="display:none;" type="text" name="infoid" id="infoid" value='${infoid}'/>
+							</fieldset>-->
+
+					</div>
+
+					<div class="admin06_8"><input type="checkbox">同意
+						<a>《聪付服务协议》</a> 此处还可以输入1000字</div>
+					<div class="admin06_9"><input type="submit" value="发布" /></div>
+
+				</div>
+
+			</div>
+		</div>
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+
+	</body>
+	<!--<script type="text/javascript">
+		function setFontColor(obj) {
+			document.execCommand("forecolor", false, obj.value);
+		}
+
+		function setFontStyle(obj) {
+			document.execCommand(obj.value, false, null);
+		}
+
+		function setFontFamily(obj) {
+			document.execCommand("fontname", false, obj.value);
+		}
+	</script>-->
+	<!--日历插件的js部分代码-->
+	<script>
+		$('.input_cxcalendar').each(function() {
+			var a = new Calendar({
+				targetCls: $(this),
+				type: 'yyyy-mm-dd HH:MM',
+				wday: 2
+			}, function(val) {
+				console.log(val);
+			});
+		});
+
+		//		$(document).ready(function() {
+		//	        $('#editableText').summernote({
+		//	        	  width:657,
+		//	        	  height: 271,                 // set editor height
+		//	        	  minHeight: null,             // set minimum height of editor
+		//	        	  maxHeight: null,             // set maximum height of editor
+		//	        	  focus: true	                  // set focus to editable area after initializing summernote
+		//	        });
+		//	    });
+	</script>
+	
+<script>
+
+		//弹出框上的分页
+		$(function() {
+
+			$('.setPage').change(function() {
+
+				getMsg(parseInt($(this).val()))
+			})
+
+			function getMsg(num) {
+				$.ajax({
+					url: "data/bussinessmanage.json",
+					type: 'GET',
+					dataType: 'json',
+					success: function(data) {
+						var sun1 = data;
+						//1.计算分页数量
+						var showNum = num;
+						var dataL = data.list.length;
+						var pageNum = Math.ceil(dataL / showNum);
+						//var address = data.list[0].bus.address;
+						// var bus_Id=data.list[0].bus.bus_Id; 
+						//   var money=data.list[0].bus.money;
+						$('.Pagination').pagination(pageNum, {
+							num_edge_entries: 1, //边缘页数
+							num_display_entries: 4, //主体页数
+							items_per_page: 1, //每页显示1项
+							prev_text: "上一页",
+							next_text: "下一页",
+							callback: function(index) {
+								var aaaaa = index;
+								console.log(index);
+								var html = '<ul>'
+
+								console.log(showNum * index + '~' + parseInt(showNum * index) + parseInt(showNum))
+								for(var i = showNum * index; i < showNum * index + showNum; i++) {
+									var qqqq = dataL;
+									console.log(i)
+									if(i < dataL) {
+										var nums = data.list[i].nums;
+										var name = data.list[i].name;
+										var phone = data.list[i].phone;
+										var charge = data.list[i].charge;
+									//	var status = data.list[i].status;
+
+										//var yue = data.list[i].yue;
+										var time = data.list[i].time;
+										//                                   var name="网点充值";
+										var hh = "<input type='checkbox'  name='interest' value='like' style='margin-left:21px'>"
+										html += "<li >";
+
+										html += "<div class='detail'>";
+										html += "<span class='price0'>" + hh + "</span>"
+										html += "<span class='price1'>" + nums + "</span>"
+										html += "<span class='price2'>" + name + "</span>"
+										html += "<span class='price3'>" + phone + "</span>"
+										html += "<span class='price4'>" + charge + "</span>"
+									//	html += "<span class='price5'>" + status + "</span>"
+											//      html += "<span class='price6'>" + yue + "</span>"
+										html += "<span class='price7'>" + time + "</span>"
+
+										html += "</div></li>";
+									}
+								}
+								html += '</ul>';
+								$('.list').html(html)
+							}
+						})
+
+					}
+				})
+			}
+			getMsg(8)
+
+		})
+	
+	</script>
+</html>

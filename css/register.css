@@ -1,0 +1,282 @@
+/*@charset "utf-8";
+			* {
+				word-wrap: break-word;
+			}
+			
+			html {
+				-webkit-text-size-adjust: none;
+			}
+			
+			body,
+			div,
+			dl,
+			dt,
+			dd,
+			ul,
+			ol,
+			li,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			pre,
+			form,
+			fieldset,
+			input,
+			textarea,
+			p,
+			blockquote,
+			th,
+			td,
+			span {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				font: normal 14px/24px "微软雅黑";
+			}
+			/*登录注册的头部*/
+			
+			#header {
+				width: 1920px;
+				height: 111px;
+			}
+			
+			.header_left {
+				width: 525px;
+				float: left;
+			}
+			
+			.header_left img {
+				float: right;
+				margin-top: 21px;
+			}
+			
+			.header_center {
+				color: #525898;
+				font-size: 24px;
+				border-bottom: 1px solid #CCCCCC;
+				float: left;
+				margin-left: 59px;
+				margin-top: 32px;
+			}
+			
+			.header_center h3 {
+				border-bottom: 1px solid #CCCCCC;
+				line-height: 20px;
+				line-height: 38px;
+			}
+			
+			.header_right {
+				width: 417px;
+				float: right;
+				margin-top: 27px;
+			}
+			
+			.header_right .login {
+				width: 64px;
+				height: 26px;
+				float: left;
+				display: block;
+			}
+			
+			.header_right .login:hover {
+				border: solid 2px #abafd8;
+				border-radius: 5px;
+			}
+			
+			.header_right .login h3 {
+				text-align: center;
+				margin-top: 6px;
+			}
+			
+			.header_right .resiger {
+				width: 64px;
+				height: 26px;
+				float: left;
+				display: block;
+			}
+			
+			.header_right .resiger:hover {
+				border: solid 2px #abafd8;
+				border-radius: 5px;
+			}
+			
+			.header_right .resiger h3 {
+				text-align: center;
+				margin-top: 6px;
+			}
+			/*注册========================================*/
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			body {
+				font: 12px/1.5 Tahoma;
+			}
+			
+			#background {
+				height: 692px;
+				background: url(img/login-background.png) no-repeat;
+				background-size: cover;
+				overflow: hidden;
+			}
+			
+			#wrap {
+				width: 600px;
+				height: 470px;
+				margin: 150px auto;
+			}
+			
+			#tab {
+				height: 60px;
+				overflow: hidden;
+				zoom: 1;
+				background: #eeeeee;
+				border: 3px solid #ccc;
+			}
+			
+			#tab li {
+				float: left;
+				color: #666666;
+				width: 297px;
+				height: 60px;
+				cursor: pointer;
+				line-height: 54px;
+				text-align: center;
+				font-size: 22px;
+				font-family: "微软雅黑";
+			}
+			
+			#tab li.current {
+				color: #000;
+				background: #FFFFFF;
+			}
+			
+			#content {
+				border: 3px solid #CCCCCC;
+				border-top-width: 0;
+				width: 595px;
+				height: 415px;
+				background: #FFFFFF;
+			}
+			
+			#content ul {
+				line-height: 25px;
+				display: none;
+				margin: 0 30px;
+				padding: 10px 0;
+			}
+			/*表单的样式==========================================================*/
+			
+			.form {
+				width: 344px;
+				height: 303px;
+				margin: auto;
+			}
+			
+			.form p {
+				display: block;
+				float: left;
+				font-size: 13px;
+			}
+			
+			.phone_num {
+				margin-top: 45px;
+			}
+			
+			.phone_num,
+			.password_1,
+			.password_2,
+			.submit_1 {
+				width: 338px;
+				height: 45px;
+				margin-bottom: 8px;
+			}
+			
+			.yanzheng {
+				width: 180px;
+				height: 45px;
+				margin-bottom: 8px;
+			}
+			/*验证码*/
+			#btnSendCode{width: 154px; height: 48px;}
+			#btnSendCodes{width: 154px; height: 48px;}
+			/*#id{width:150px; height:45px; border: none;}*/
+			
+			.password_1 {}
+			
+			.password_2 {}
+			
+			.OK {
+				float: left;
+				margin-left: 85px;
+				margin-top: 8px;
+			}
+			
+			.submit_1 {
+				background: #FFFFFF;
+			}
+			/*底部图标*/
+			
+			.iconfont {
+				height: 184px;
+				overflow: hidden;
+			}
+			
+			.iconfont .inner_icon {
+				width: 1196px;
+				margin: auto;
+			}
+			
+			.iconfont dl {
+				width: 300px;
+				float: left;
+				margin-top: 63px;
+				margin-left: 73px;
+			}
+			
+			.iconfont dl dt {
+				float: left;
+				margin-right: 10px;
+			}
+			
+			.iconfont dl dd {
+				float: left;
+				line-height: 24px;
+			}
+			/*footer*/
+			
+			#footer {
+				height: 119px;
+				background: #dddddd;
+				overflow: hidden;
+			}
+			
+			#footer .left {
+				float: left;
+				margin: 25px 10px 0 411px;
+			}
+			
+			#footer .center {
+				float: left;
+				font-size: 14px;
+				margin-top: 50px;
+			}
+			
+			#footer .right {
+				float: left;
+				margin-left: 269px;
+				margin-top: 52px;
+			}
+			
+			#footer .right a {
+				color: #000000;
+				text-decoration: none;
+			}*/

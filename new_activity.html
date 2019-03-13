@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+
+		<!--分页-->
+		<link rel="stylesheet" href="css/pagination.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.pagination.js"></script>
+		<style>
+			.banner_new {
+				background: url(img/banner.png) no-repeat center;
+				height: 432px;
+				/*overflow: hidden;*/
+				background-size: cover;
+				
+			}
+			
+			.banner_newinner{ width: 830px;
+			 margin: auto; position: relative;}
+			
+			.banner_new a {
+				width: 124px;
+				height: 32px;
+				display: inline-block;
+				border: 1px solid #FFFFFF;
+				border-radius: 10px;
+				color: #FFFFFF;
+				text-decoration: none;
+				margin: 206px 0 0 784px;
+				text-align: center;
+				line-height: 29px;
+				
+			}
+			/*中间分类和搜索功能*/
+			
+			.soso {}
+			
+			.soso_inner {
+				margin: auto;
+				width: 1196px;
+				height: 253px;
+			}
+			
+			.personal_main_innerRZ01 {
+				width: 1100px;
+				height: 143px;
+				border: 1px solid #CCCCCC;
+				margin: 29px 0 17px 50px;
+				background: #f5f5f5;
+			}
+			
+			.personal_main_innerRZ01 .div1 {
+				line-height: 30px;
+				padding: 21px 0 0 30px;
+			}
+			
+			.personal_main_innerRZ01 div {
+				line-height: 37px;
+				padding-left: 30px;
+			}
+			
+			.personal_main_innerRZ01 div a {
+				text-decoration: none;
+				color: #000000;
+			}
+			
+			.personal_main_innerRZ01 input {
+				width: 117px;
+				height: 36px;
+				background: url(../img/p_rili.png) no-repeat right;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.personal_main_innerRZ01 p {
+				display: inline;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			
+			.personal_main_innerRZ01 a {
+				display: inline-block;
+				margin-left: 22px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			
+			.personal_main_innerRZ01 a:hover {
+				/*width:45px; height:22px;*/
+				background: #4b53ab;
+			}
+			
+			.personal_main_innerRZ01 select {
+				/*background: url(img/zuixin.png) no-repeat right;*/
+			}
+			
+			.p01 {
+				border: 1px solid #CCCCCC;
+				height: 44px;
+				border-top: none;
+				margin-left: 10px;
+			}
+			
+			.p01 li {
+				float: left;
+				font-size: 16px;
+				font-weight: bold;
+				text-align: center;
+				margin: 0 30px;
+				line-height: 40px;
+			}
+			/*搜索框*/
+			
+			.soso_02 {}
+			
+			.soso_02left {
+				float: left;
+				margin-left: 47px;
+			}
+			
+			.soso_02left a {
+				border: 1px solid #CCCCCC;
+				width: 81px;
+				height: 24px;
+				display: inline-block;
+				text-align: center;
+				line-height: 24px;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.soso_02left a:hover {
+				background: #4b53ab;
+			}
+			
+			.soso_02right {
+				float: left;
+			}
+			
+			.soso_02right input {
+				width: 274px;
+				height: 32px;
+				margin-left: 63px;
+				background: url(img/zuixinfdj.png) no-repeat right;
+			}
+			/* 动态获取数据*/
+			
+			.zxdong {}
+			
+			.zxdong_inner {
+				width: 1094px;
+				/*height: 1222px;*/
+				margin: auto;
+			}
+			
+			.zx {
+				width: 1105px;
+				height: 184px;
+				list-style: none;
+			}
+			
+			.zx_left {
+				float: left;
+				width: 180px;
+				height: 182px;
+			}
+			
+			.zx_center {
+				float: left;
+				width: 768px;
+				height: 150px;
+			}
+			
+			.zx_center h3 {
+				margin-bottom: 24px;
+			}
+			
+			.zx_center p {
+				line-height: 24px;
+				margin-bottom: 23px;
+			}
+			
+			.zx_center span {
+				display: block;
+				line-height: 24px;
+			}
+			
+			.zx_right {
+				float: left;
+				width: 128px;
+				height: 146px;
+			}
+			
+			.zx_right div {
+				height: 77px;
+			}
+			
+			.setPageDiv {
+				width: 1100px;
+				margin: auto;
+				margin-bottom: 91px;
+				margin-top: 37px;
+			}
+			
+			#pagination {
+				width: 522px;
+				margin: auto;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+
+	</head>
+
+	<body onload="aa('bussiness')">
+		<!--加载第一个接口-->
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="banner_new">
+			<div class="banner_newinner">
+			<a href="bussinessregister.html">立即申请</a>
+			</div>
+		</div>
+
+		<!--中间搜索内容或-->
+		<div class="soso">
+			<div class="soso_inner">
+				<div class="personal_main_innerRZ01">
+					<div class="div1">
+						<p>分类</p>
+
+						<a>全部活动</a>
+						<a>商超活动</a>
+						<a>农贸活动</a>
+						<a>平台活动</a>
+						<a>新闻活动</a>
+					</div>
+					<div>
+						<p>时间：</p>
+						<!--<a>不限</a>
+		          	    	  	      	  	  <a>今天</a>
+		          	    	  	      	  	  <a>近一周</a>
+		          	    	  	      	  	  <a>近一个月</a>
+		          	    	  	      	  	  <a>周末</a>-->
+						<a href="javascript:void(0)" onclick="aa('bussiness01')">今日</a>
+						<a href="javascript:void(0)" onclick="aa('bussiness02')">最近一周</a>
+						<a href="javascript:void(0)" onclick="aa('bussiness03')">最近一月</a>
+						<a href="javascript:void(0)" onclick="aa('bussiness01')">周末</a>
+
+					</div>
+
+					<div>
+						<p>地点：</p>
+						<select>
+							<option>上海</option>
+							<option>北京</option>
+							<option>广州</option>
+							<option>深圳</option>
+							<option>杭州</option>
+							<option>杭州</option>
+							<option>浙江</option>
+							
+							
+						
+						</select>
+
+						<select>
+							<option>安庆</option>
+							<option>合肥</option>
+							<option>杭州</option>
+						</select>
+
+					</div>
+					
+					
+					
+				</div>
+				<div class="soso_02">
+					<div class="soso_02left">
+						<a href="javascript:void(0)" onclick="aa('bussiness01')">最近发布</a>
+						<a href="javascript:void(0)" onclick="aa('bussiness02')">热门点击</a>
+					</div>
+					<div class="soso_02right">
+						<input type="text" placeholder="搜索你想要的活动..." />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--动态获取li的数据-->
+		<div class="zxdong">
+			<div class="zxdong_inner">
+				<ul>
+					<!--<li class="zx">
+		     	 			<div class="zx_left">
+		     	 				<img src="css/img/2_10.png">
+		     	 			</div>
+		     	 			<div class="zx_center">
+		     	 				<h3>新店开业刷刷送豪礼</h3>
+		     	 				<p>活动期间活动期间，凡进店使用聪付消费，即可获得巴拉巴拉小魔仙玩偶一个，消费满555元，即可参与iPhone7抽奖活动。 数量有限，先到</p>
+		     	 				<span>时间：2016-11-08 至 2016-11-15</span>
+		     	 				<span>地址：徐汇区宜山路889号</span>
+		     	 			</div>
+		     	 			<div class="zx_right">
+		     	 				<div>点击量</div>
+		     	 				<div><img src="img/zuixinfdj.png"><span>天天超市</span></div>
+		     	 			</div>
+		     	 		</li>-->
+					<div class="list"></div>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="setPageDiv">
+			<div class="Pagination" id="pagination"></div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+	<script>
+		function aa(id1) {
+			//分页
+			$(function() {
+
+				$('.setPage').change(function() {
+
+					getMsg(parseInt($(this).val()))
+				})
+
+				function getMsg(num) {
+					$.ajax({
+						url: 'data/' + id1 + '.json',
+						type: 'GET',
+						dataType: 'json',
+						success: function(data) {
+							//1.计算分页数量
+							var showNum = num;
+							var dataL = data.list.length;
+							var pageNum = Math.ceil(dataL / showNum);
+							$('.Pagination').pagination(pageNum, {
+								num_edge_entries: 1, //边缘页数
+								num_display_entries: 4, //主体页数
+								items_per_page: 1, //每页显示1项
+								prev_text: "上一页",
+								next_text: "下一页",
+								callback: function(index) {
+									//console.log(index);
+									var html = '<ul>'
+
+									console.log(showNum * index + '~' + parseInt(showNum * index) + parseInt(showNum))
+									for(var i = showNum * index; i < showNum * index + showNum; i++) {
+										//console.log(i)
+										if(i < dataL) {
+											//                                   var charge_Id = data.list[i].charge_Id;
+											//                                   var manager=data.list[i].manager; //交易类型
+											//                                   var recharge=data.list[i].recharge;
+											//                                   var status=data.list[i].status;
+											//                                   var time=data.list[i].time;
+											//                                   var name="网点充值";
+											//                                   var hh = "已完成"
+											//                                    html += "<li >";
+											//
+											//                                     
+											//                                      html += "<div class='detail'>";
+											//                                      
+											//                                      html += "<span class='price1'>" + time + "</span>"
+											//                                      html += "<span class='price2'>" + name  + "</span>"
+											//                                      html += "<span class='price3'>" + manager + "</span>"
+											//                                      html += "<span class='price4'>" + recharge + "</span>"
+											//                                      html += "<span class='price5'>" + hh + "</span>"
+											//                                      html += "<span class='price6'>" + hh + "</span>"
+											//                                      
+											//                                      
+											//                                      html += "</div></li>";
+											var img = data.list[i].img;
+											var manager = data.list[i].manager; //交易类型
+											var recharge = data.list[i].recharge;
+
+											var time = data.list[i].time;
+											var address = data.list[i].address;
+											var dianji = data.list[i].dianji;
+											var tupian = data.list[i].tupian;
+											var chaoshi = data.list[i].chaoshi;
+
+											html += "<li class='zx'>";
+											html += "<div class='zx_left'>"
+
+											//	html = html + "<img src='"+img+"'/>"
+											html += "<img src='" + img + "'/>"
+											html += "</div>"
+											html += "<div class='zx_center'>"
+											html += "<h3>" + manager + "</h3>"
+											html += "<p>" + recharge + "</p>"
+											html += "<span>" + time + "</span>"
+											html += "<span>" + address + "</span>"
+											html += "</div>"
+											html += "<div class='zx_right'>"
+											html += "<div>点击量" + dianji + "</div>"
+											html += "<div>"
+											html += "<img src='" + tupian + "'/>"
+											html += "<span>" + chaoshi + "</span>"
+											html += "</div>"
+											html += "</div></li>";
+
+										}
+									}
+									html += '</ul>';
+									$('.list').html(html)
+								}
+							})
+
+						}
+					})
+				}
+				getMsg(6)
+
+			})
+		}
+	</script>
+
+</html>

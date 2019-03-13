@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 14px/14px "微软雅黑";
+	color: #333;
+	background: #fff;
+}
+/*管理员中心和天气预报*/
+ .personal{/*overflow: hidden;*/height: 122px; background: url(img/personal.png) no-repeat center; background-size: cover; }
+ 
+ /*分页*/
+* {
+            padding: 0;
+            margin: 0;
+        }
+
+        .list {
+            width: 1000px;
+            margin: 10px auto;
+        }
+
+        .list ul li div.detail {
+            margin: 5px;
+            color: #559999;
+            float: left;
+           
+           height: 40px;
+        }
+   /*.detail span{text-align: center; display: inline-block; width: 126px;}
+   .detail .price1{ width: 150px;}
+   .detail .price2{}
+   .detail .price3{ margin-left: 5px;}
+   .detail .price4{}
+   .detail .price5{}
+   .detail .price6{margin-right: 25px;}*/
+   
+   
+       
+        .setPageDiv {
+            clear: left;
+           /* width: 1000px;*/
+            margin-left: 200px;
+        }
+        
+        
+/* 管理员中心的内容*/
+.inner_admin{width: 979px; /*height: 803px;*/ /*height: 900px;*/margin: auto;  overflow: hidden; }
+         .aa {
+				width: 158px; float:left;border: 1px solid #CCCCCC;/*padding:10px  0px;*/
+				margin-top: 10px;
+			}
+			
+			.aa li {
+				
+				list-style: none;
+				cursor: pointer;
+				list-style: none;line-height: 32px; text-align: center; margin-top: 3px;
+			}
+			
+			.bb {
+				width: 700px;
+				float: left;
+				
+			}
+			
+			    
+		  	   
+		  	    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

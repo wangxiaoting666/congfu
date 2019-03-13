@@ -1,0 +1,395 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 14px/14px "微软雅黑";
+	color: #333;
+	background: #fff;
+}
+/*个人中心和天气预报*/
+ .personal{height: 122px; background: url(../img/personal.png) no-repeat center; background-size: cover;  position: relative; width: 100%;}
+ .personal-inner{ width:1111px; margin: auto;height: 122px;}
+ .user{float: left; width:700px;height: 122px;}
+ /*分页*/
+* {
+            padding: 0;
+            margin: 0;
+        }
+
+        .list {
+            width: 1000px;
+            margin: 10px auto;
+        }
+
+    
+        
+
+        .list ul li div.detail {
+            margin: 5px;
+            color: #559999;
+            float: left;
+           
+           height: 40px;
+        }
+   .detail span{text-align: center; display: inline-block; width: 126px;}
+   .detail .price1{ width: 150px;}
+   .detail .price2{}
+   .detail .price3{ margin-left: 5px;}
+   .detail .price4{}
+   .detail .price5{}
+   .detail .price6{margin-right: 25px;}
+   
+   
+       
+        .setPageDiv {
+            clear: left;
+           /* width: 1000px;*/
+            margin-left: 200px;
+        }
+        
+        
+/* 个人中心的内容*/
+.inner_personal{width: 979px; /*height: 803px;*/ /*height: 900px;*/margin: auto;  overflow: hidden; }
+         .aa {
+				width: 158px; float:left;border: 1px solid #CCCCCC;/*padding:10px  0px;*/
+				margin-top: 10px;
+			}
+			
+			.aa li {
+				
+				list-style: none;
+				cursor: pointer;
+				list-style: none;line-height: 32px; text-align: center; margin-top: 3px;
+			}
+			
+			.bb {
+				width: 700px;
+				float: left;
+				
+			}
+			
+			    
+		  	   
+		  	    
+/*进入个人中心的主页面*/		  	    
+.personal_main_innerR00 {width:846px; height: 803px;float:left;margin-left: 10px; overflow: hidden;margin-top:10px;}
+.p00_1{}
+.p00_11{width: 394px; height: 126px; border: 1px solid #CCCCCC; float: left;}
+.p00_111{}
+.p00_111 h3{font-size: 20px; margin: 10px 0 0 10px ; color: #454545; display: inline-block;}
+.p00_111 a{margin-left:230px ; color: #638ce0; font-size: 14px;}
+
+
+.p00_112{font-size: 30px; color: #b20007; margin: 18px 0 40px 139px;}
+.p00_113{}
+.p00_113 a{margin:0px 0 0 353px;}
+
+
+
+.p00_12{width: 399px; height: 126px; border: 1px solid #CCCCCC;float: left; margin-left: 8px;}
+.p00_121{margin: 10px  0 0 125px;}
+
+.p00_2{}
+
+
+/*交易记录*/		  	     
+.personal_main_innerR01 {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}
+		  	     .personal_main_innerRS01{ background: url(../img/p_jiaoyi.png) no-repeat left; margin-left: 10px; height: 50px; } 
+		  	     .personal_main_innerRS01 h3{margin-left: 15px; color: #666666; line-height: 48px;}
+		  	     .personal_main_innerRZ01{width:814px; height: 180px; border: 1px solid #CCCCCC; margin-left: 10px; background: #f5f5f5;} 
+		  	     .personal_main_innerRZ01{/*width:784px; height: 177px;*/} 
+		  	     .personal_main_innerRZ01  .div1{line-height: 30px;padding:  38px  0  0 30px;  }
+		  	     .personal_main_innerRZ01 div{line-height: 37px; padding-left: 30px;}
+		  	     /*.businessman_main_innerRZ div p{font: "微软雅黑"; font-size:15px}*/
+		  	      .personal_main_innerRZ01 input{width:117px; height: 36px; background: url(../img/p_rili.png) no-repeat right;border: 1px solid #CCCCCC;}
+		  	     
+		  	      .personal_main_innerRZ01 p{display: inline;  font-size: 16px; font-weight: bold;}
+		  	      .personal_main_innerRZ01 a{display:inline-block; margin-left: 22px;font-size: 15px; font-weight: bold; }
+		  	      .personal_main_innerRZ01 a:hover{/*width:45px; height:22px;*/background:#4b53ab ; }
+		  	      
+		  	      .p01{ border: 1px solid #CCCCCC; height: 44px; border-top: none; margin-left: 10px;}
+		  	      .p01 li{ float: left;font-size: 16px; font-weight: bold; text-align: center; margin: 0 30px; line-height: 40px;}
+		  	      
+		  	     /*.personal_main_innerRX01{padding: 0 10px;}
+		  	     .personal_main_innerRX01 div{}
+		  	      .personal_main_innerRX01 div ul{width:782px; height: 53px;border-bottom: 1px solid #CCCCCC; }
+		  	      .personal_main_innerRX01 div ul li{width:128px;  text-align:center;float:left; line-height: 55px; }*/
+/*充值记录*/
+                 .personal_main_innerR02 {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}
+		  	     .personal_main_innerRS02{ background: url(../img/p_chongzhi_03.png) no-repeat left; margin-left: 10px; height: 50px; } 
+		  	     .personal_main_innerRS02 h3{margin-left: 15px; color: #666666; line-height: 48px;}
+		  	     .personal_main_innerRZ02{width:814px; height: 180px; border: 1px solid #CCCCCC; margin-left: 10px; background: #f5f5f5;} 
+		  	     .personal_main_innerRZ02{/*width:784px; height: 177px;*/} 
+		  	     .personal_main_innerRZ02  .div1{line-height: 30px;padding:  38px  0  0 30px;  }
+		  	     .personal_main_innerRZ02 div{line-height: 37px; padding-left: 30px;}
+		  	     /*.businessman_main_innerRZ div p{font: "微软雅黑"; font-size:15px}*/
+		  	      .personal_main_innerRZ02 input{width:117px; height: 36px;background: url(../img/p_rili.png) no-repeat right; border: 1px solid #CCCCCC;}
+		  	     
+		  	      .personal_main_innerRZ02 p{display: inline;  font-size: 16px; font-weight: bold;}
+		  	      .personal_main_innerRZ02 a{display:inline-block; margin-left: 22px;font-size: 15px; font-weight: bold; }
+		  	      .personal_main_innerRZ02 a:hover{/*width:45px; height:22px;*/background:#4b53ab ; }
+		  	      
+		  	     /*.personal_main_innerRX02{padding: 0 10px;}
+		  	     .personal_main_innerRX02 div{}
+		  	      .personal_main_innerRX02 div ul{width:782px; height: 53px;border-bottom: 1px solid #CCCCCC; }
+		  	      .personal_main_innerRX02 div ul li{width:128px;  text-align:center;float:left; line-height: 55px; }*/
+		  	     .p02{ border: 1px solid #CCCCCC; height: 44px; border-top: none; margin-left: 10px;}
+		  	      .p02 li{ float: left;font-size: 16px; font-weight: bold; text-align: center; margin: 0 30px; line-height: 40px;}
+                 
+		  	     
+
+.personal_main_innerR03 {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}
+/*账户信息333333333*/
+  .p03_1{margin: 10px  0 0 10px;}
+	 .p03_2{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+	 .p03_2 img{ margin-left: 560px;}
+	 .p03_2 a{color: #B20007;}
+	 .p03_4{border-top: 1px solid #CCCCCC; margin-left: 10px;}
+	 .p03_4 p{margin-left: 10px; line-height: 35px;}
+	  .p03_5{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+	  
+      .p03_6{border-top: 1px solid #CCCCCC; margin-left: 10px;}
+      .p03_6 .p03_61{margin:0 67px 0 110px;}
+      .p03_6 .p03_62{margin:0 67px 0 33px;}
+      .p03_6 .p03_63{margin:0 67px 0 110px;}
+	 .p03_6 p{margin-left: 10px; line-height: 35px;}
+	 .p03_6 p a{color: #c3585a;}
+	 
+	 
+	/*实名认证4*/	  	
+	/* .personal_main_innerR04{width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}   */ 
+	 .personal_main_innerR04sm {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden; margin-top:10px; margin-bottom: 50px;} 
+	 .p04_1{margin: 10px  0 0 10px;}
+	 .p04_2{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+	 .p04_4{border-top: 1px solid #CCCCCC; margin-left: 10px;}
+	 .p04_4 p{margin-left: 10px; line-height: 35px; }
+	 .renzwanc{width: 338px; height: 46px; 
+	 /*margin-bottom: 20px;*/ background: #b20007;
+	  margin-left: 200px; color: #FFFFFF;
+	  font-size: 22px;
+	  margin-bottom: 80px;
+	  margin-top: 34px;}
+	 
+	 
+ .personal_main_innerR04 {width:806px; /*height: 803px*/;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden; margin-top:10px; margin-bottom: 50px;} 
+.p04_11{margin: 10px  0 0 10px;}
+.p04_22{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+.p04_33{margin-left: 16px; height: 188px; border-bottom: 1px solid #CCCCCC; border-top: 1px solid #CCCCCC;}
+.p04_44{/*height: 1014px;*/ overflow: hidden;}
+.p04_44 p{line-height: 24px; display: inline-block;}
+.p04_44 div{  margin-top:17px; margin-bottom: 20px;}
+
+.p04_441{ margin-left:103px ;}
+
+.p04_442{margin-left:134px ;}
+.p04_443{margin-left:166px ;}
+.p04_443 input{ width: 18px; height: 18px;}
+.p04_444{margin-left:132px ;}
+.p04_445{margin-left:148px ;}
+.p04_445 input{ width: 18px; height: 18px; }
+.p04_446{margin-left:148px ;}
+.p04_447{margin-left:108px ;}
+.p04_447 select{ width: 120px; height: 35px;}
+
+.p04_44_x{width: 338px; height: 46px; /*margin-bottom: 20px;*/ background: #b20007; margin-left: 118px; color: #FFFFFF;font-size: 22px;}
+                                    /*上传身份证
+                                   		.inputFile {
+                 width: 1px;
+                     height: 1px;
+                     opacity: 0;
+                      overflow: hidden;
+                     position: absolute;
+    z-index: -1;
+                       }
+  #preview2{width: 123px; height: 80px;}*/
+
+
+/*卡片管理*/	  
+.personal_main_innerR05 {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}
+                           /*卡片挂失成功*/
+.b05_1{margin: 10px  0 0 10px;}
+.b05_2{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑"; }
+.b05_3{border-top: 1px solid #CCCCCC; margin-left: 10px;}
+.b05_3 img{margin: 47px  0 0 76px;}
+
+                            /*卡片挂失号码*/
+                           .b05_11{margin: 10px  0 0 10px;}
+.b05_22{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑"; }
+.b05_33{border-top: 1px solid #CCCCCC; margin-left: 10px;}
+
+.b05_33 .b05_331{ width: 341px;  height:49px; border: 1px solid #CCCCCC; margin:81px  0 11px  238px;}
+.b05_33 .b05_331 div{float: left;}
+.b05_33 .b05_331 input{float: left;width: 300px;  height:46px; border: none;}
+
+.b05_33 .b05_332{width: 341px;  height:49px;border: 1px solid #CCCCCC;  margin: 0px  0 61px  238px;}
+.b05_33 .b05_332 div{float: left;}
+.b05_33 .b05_332 input{width: 150px;  height:48px;border: none;}
+.b05_33 .b05_333{margin-left: 238px;}
+.b05_33 .b05_333 input{width: 341px;  height:49px; background:#b20007; font-family: "微软雅黑"; color: #FFFFFF; font-size: 22px;}
+                          /*卡片管理已领取的卡片*/
+.b05_111{margin: 10px  0 0 10px}
+.b05_222{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+.b05_333{ margin-left: 10px;}
+.b05_333 ul{width:264px; height: 151px; background: url(../img/p_kagl_lq.png) no-repeat; margin: 48px 0 0 78px;position: relative;}
+.b05_333_1{font-size: 24px; color: #b20007;position: absolute;top:18px;left:19px ;}
+.b05_333_2{font-size: 15px;color: #666666;font-weight: bold;position: absolute;top:60px;left:19px ;}
+.b05_333_3{color: #dedede;position: absolute;bottom:18px;left:19px ;}
+
+.b05_444{margin: 16px 0 0 115px;}
+.b05_444 a{width:89px; height: 27px; font-size: 12px; display: inline-block; line-height: 24px; text-align: center;}
+.b05_444 a:hover{background: #b20007;color: #FFFFFF; }
+
+
+/*卡片申请66666*/	
+ .personal_main_innerR06 {width:806px; /*height: 892px;*/float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden; margin-top:10px; margin-bottom: 50px;} 
+.p06_1{margin: 10px  0 0 10px;}
+.p06_2{margin:0 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+.p06_3{margin-left: 16px; height: 188px; border-bottom: 1px solid #CCCCCC; border-top: 1px solid #CCCCCC;}
+.p06_4{height: 1014px; overflow: hidden;}
+.p06_4 p{line-height: 24px; display: inline-block; }
+.p06_411{ margin-left:103px ;}
+.p06_412{margin-left:134px ;}
+.p06_413{margin-left:166px ;}
+.p06_413 input{ width: 18px; height: 18px;}
+.p06_414{margin-left:132px ;}
+.p06_415{margin-left:148px ;}
+/*.p06_416{margin-left:103px ;}*/
+
+.p06_417{margin-left:163px ;}
+.p06_418{margin-left:126px ;}
+ select{ width: 130px; height: 35px; font-size: 16px;}
+textarea {margin-left:200px ; width: 252px; height: 79px;}
+/*上传身份证按钮*/
+.add_ha {
+				margin-left: 46px;
+				/*margin-bottom: 50px;*/
+				margin-top: 10px;
+				width: 102px;
+				height: 32px;
+				background: #B20007;
+				text-align: center;
+				line-height: 28px;
+				color: #FFFFFF;
+				font-size: 14px;
+				border-radius: 5px;
+			}
+.p06_4 div{  margin-top: 17px; margin-bottom: 20px;}
+.p06_4_x{width: 338px; height: 46px;  
+background: #b20007; margin-left: 210px; 
+color: #FFFFFF;font-size: 22px;
+font-weight: bold;}
+                                    /*上传身份证*/
+                                   		.inputFile {
+                width: 102px;
+				height: 32px;
+                     opacity: 0;
+                      overflow: hidden;
+                     position: absolute;
+                       z-index: 29;
+				left:45px;
+				top: 135px;
+                       }
+                      #preview2{width: 123px; height: 80px;}
+                      /*卡片申请领卡方式*/
+.personal_main_innerR06q {
+	width: 806px;
+	height: 892px;
+	float: left;
+	margin-left: 10px;
+	border: 1px solid #CCCCCC;
+	/*overflow: hidden;*/
+	margin-top: 10px;
+	margin-bottom: 50px;
+}                     
+                     .p06_11{margin: 10px  0 0 10px}
+                     .p06_22{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+                     .p06_33{margin-left: 297px;line-height: 24px;}
+                     
+                     .p06_44{margin:91px 0 0 219px; width: 340px; height: 44px; background: #b20007; color: #FFFFFF; font-size: 22px;}
+                     
+                      /*卡片申请领取成功*/
+                     .p06_111{margin: 10px  0 0 10px;}
+                     .p06_222{margin:10px 0 10px 16px; font-weight: bold;   font-family:"微软雅黑";}
+
+ /*卡片申请，可领取的卡片*/
+.personal_main_innerR06kq {width:806px; height: 892px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden; margin-top:10px; margin-bottom: 50px;} 
+.b06_1111{margin: 10px  0 0 10px}
+.b06_2222{margin:0px 0 10px 16px; font-weight: bold; 
+line-height: 36px; 
+ font-family:"微软雅黑";border-bottom: 1px solid #CCCCCC; display: block;}
+
+/*生活卡*/
+.b06_3333{ margin-left: 10px; float: left;}
+.b06_3333 ul{width:264px; height: 151px; background: url(../img/p_kagl_lq.png) no-repeat; margin: 48px 0 0 78px;position: relative;}
+.b06_3333_1{font-size: 24px; color: #b20007;position: absolute;top:18px;left:19px ;}
+.b06_3333_2{font-size: 15px;color: #666666;font-weight: bold;position: absolute;top:60px;left:19px ;}
+.b06_3333_3{color: #dedede;position: absolute;bottom:18px;left:19px ;}
+.b06_3333 a{width:89px; height: 27px; font-size: 12px; display: inline-block; line-height: 24px; text-align: center; margin-left: 73px;}
+.b06_3333 a:hover{background: #b20007;color: #FFFFFF; }
+/*老年卡*/
+.b06_4444{ margin-left: 10px;float: left;}
+.b06_4444 ul{width:264px; height: 151px; background: url(../img/p_lnk.png) no-repeat; margin: 48px 0 0 78px;position: relative;}
+.b06_4444_1{font-size: 24px; color: #32216c;position: absolute;top:18px;left:19px ;}
+.b06_4444_2{font-size: 15px;color: #666666;font-weight: bold;position: absolute;top:60px;left:19px ;}
+.b06_4444_3{color: #dedede;position: absolute;bottom:18px;left:19px ;}
+.b06_4444 a{width:89px; height: 27px; font-size: 12px; display: inline-block; line-height: 24px; text-align: center; margin-left: 73px;}
+.b06_4444 a:hover{background: #32216c;color: #FFFFFF; }
+
+/*儿童卡*/
+.b06_5555{ margin-left: 10px; float: left;}
+.b06_5555 ul{width:264px; height: 151px; background: url(../img/p_etk.png) no-repeat; margin: 48px 0 0 78px;position: relative;}
+.b06_5555_1{font-size: 24px; color: #00ac65;position: absolute;top:18px;left:19px ;}
+.b06_5555_2{font-size: 15px;color: #666666;font-weight: bold;position: absolute;top:60px;left:19px ;}
+.b06_5555_3{color: #dedede;position: absolute;bottom:18px;left:19px ;}
+.b06_5555 a{width:89px; height: 27px; font-size: 12px; display: inline-block; line-height: 24px; text-align: center; margin-left: 73px;}
+.b06_5555 a:hover{background: #00ac65;color: #FFFFFF; }
+
+
+/*商家入驻申请*/	  
+.personal_main_innerR07 {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}
+
+
+/*安全策略*/
+.personal_main_innerR08 {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;/*overflow: hidden;*/margin-top:10px;}	
+.p08_1{margin: 10px 0 0 10px;}
+.p08_2{margin: 10px 0 10px 10px;}
+.p08_3{width:780px;border-top: 1px solid #CCCCCC; margin-left: 8px;}
+.p08_3 div{margin-left: 190px; margin-top: 50px; }
+.p08_3 div img{}
+.p08_3 div a{margin-left: 10px; display:inline-block; margin-bottom: 10px;}
+.p08_3 div p{margin: 10px 0 0 10px ; width: 416px; line-height: 24px;}
+
+/*提醒服务*/
+	.personal_main_innerR09{width:810px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}
+
+	 .p09_1{margin: 10px 0 0 10px;}
+     .p09_2{margin: 10px 0 10px 10px;border-bottom: 1px solid #CCCCCC; line-height: 37px;}
+     .p09_3{margin: 94px 0 0 147px;}
+     
+     .p09_3 p{  font-size: 18px; font-family: "微软雅黑";}
+     .p09_3 div{margin: 54px 0 0 128px;font-size: 18px;}
+
+
+/*天气预报*/
+
+		
+	.demo { /*width:250px;*/ 
+	 color:#FFF; 
+	 float: left;
+	 margin-top: 10px;
+	 }
+	.demo i { background: no-repeat top right; display:inline-block; 
+	height:57px; line-height:128px; margin:0 auto 30px auto; 
+	font-size:31px; padding-left:150px; font-style:normal;
+	 text-align:center; font-weight:bold; margin-top: 20px; float: left; }
+	.demo i.icon-xiaoyu { background-image:url(../icon/xiaoyu.png); }
+	.demo i.icon-zhongyu { background-image:url(../icon/zhongyu.png); }
+	.demo i.icon-dayu { background-image:url(../icon/dayu.png); }
+	.demo i.icon-qing { background-image:url(../icon/qing.png); }
+	.demo i.icon-duoyun { background-image:url(../icon/duoyun.png); }
+	.demo i.icon-yin { background-image:url(../icon/yin.png); }
+	.demo p {   font-size:16px; float: left;  font-size: 19px; font-weight: bold;  margin-top: 46px; margin-left: 20px;}
+	
+	.demo p span { margin:0 15px; }
+	

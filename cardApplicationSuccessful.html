@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		 <!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>
+
+		
+          <!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>
+		<style type="text/css">
+
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--个人中心加天气预报-->
+		<div class="personal">
+			<div class="personal-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">个人中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">18895731936</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		<div class="inner_personal">
+			<div class="aa">
+				<div id="leftmenu0">
+					<li style="margin-top: 15px;"><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="dealNote.html">交易记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="noteAdd.html">充值记录</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="personMessage.html">账户信息</a>
+					</li>
+					<li>
+						<a href="certificationMessage.html">实名认证</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="cardManage.html">卡片管理</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="cardApplication.html">卡片申请</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a>商家入驻申请</a>
+					</li>
+
+					<li style="margin-top: 15px;"><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="safeTactic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="serviceReminder.html">提醒服务</a>
+					</li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--卡片申请领取成功-->
+				<div class="personal_main_innerR06">
+					<div class="p06_111"><img src="img/p_kpsq.png" /></div>
+					<div class="p06_222">领取成功</div>
+					<div><img src="img/p_kpsqcg.png" /></div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/businessman.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		
+		<style type="text/css">
+			.personal_main_innerR00 {
+				width: 808px;
+				height: 876px;
+				float: left;
+				margin-left: 10px;
+				overflow: hidden;
+				margin-top: 10px;
+				position: relative;
+			}
+			
+			.p00_1 {
+				overflow: hidden;
+			}
+			
+			.p00_11 {
+				width: 394px;
+				height: 126px;
+				border: 1px solid #CCCCCC;
+				float: left;
+			}
+			
+			.p00_111 {}
+			
+			.p00_111 h3 {
+				font-size: 20px;
+				margin: 10px 0 0 10px;
+				color: #454545;
+				display: inline-block;
+			}
+			
+			.p00_111 a {
+				margin-left: 206px;
+				color: #638ce0;
+				font-size: 14px;
+			}
+			
+			.p00_112 {
+				font-size: 30px;
+				color: #b20007;
+				margin: 18px 0 40px 139px;
+			}
+			
+			.p00_113 {}
+			
+			.p00_113 a {
+				margin: 0px 0 0 353px;
+			}
+			
+			.p00_12 {
+				width: 399px;
+				height: 126px;
+				border: 1px solid #CCCCCC;
+				float: left;
+				margin-left: 8px;
+			}
+			
+			.p00_121 {
+				margin: 10px 0 0 125px;
+			}
+			
+			.p00_2 {
+				width: 808px;
+				height: 800px;
+			}
+			
+			.p00_2s {
+				width: 808px;
+				height: 400px;
+				/*display: none;*/
+			}
+			
+			.wrapper {
+				/*margin-top: 40px;*/
+			}
+			/*折线图里面 的星期和月份*/
+			
+			.title {
+				margin-top: 10px;
+			}
+			
+			.week {
+				margin-left: 643px;
+				margin-right: 20px;
+				font-size: 18px;
+			}
+			
+			.month {
+				font-size: 18px;
+			}
+		</style>
+
+		<script lang="javascript" type="text/javascript">
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+		
+
+		<!-- 引入 echarts.js -->
+		<script src="js/echarts.min.js"></script>
+		<script src="js/jquery-1.11.3.js"></script>
+
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--商家中心加天气预报-->
+		<div class="businessman">
+			<div class="businessman-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">商家中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">ID：1234</div>
+					</div>
+				</div>
+
+				<div class="demo">
+                          <!--天气预报自动加载区域-->
+				</div>
+
+			</div>
+		</div>
+		<div class="inner_businessman">
+			<div class="aa">
+				<div id="leftmenu0">
+
+					<li style="margin-top: 15px;"><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="bussinessgainrecording.html">收益记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessreport.html">收益报表</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="bussinessaccountinformation.html">账户信息</a>
+					</li>
+					<li>
+						<a href="bussinesssettledapplication.html">入驻申请</a>
+					</li>
+					<li>
+						<a href="bussinessactivitypromulgate.html">活动发布</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessactivitymanagement.html">活动管理</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="bussinesspresentapplication.html">提现申请</a>
+					</li>
+					<li>
+						<a href="bussinesspresentrecord.html">提现记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessbankcard.html">银行卡</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="bussinesssafetatic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessservicereminder.html">提醒服务</a>
+					</li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+			<!--右边内容-->
+			<div class="personal_main_innerR00">
+				<div class="p00_1">
+					<div class="p00_11">
+						<div class="p00_111">
+							<h3>账户总收益</h3>
+							<a href="bussinessgainrecording.html">查看收益</a>
+						</div>
+						<div class="p00_112">888.88元</div>
+						<div class="p00_113">
+							<a href="#">提现</a>
+						</div>
+					</div>
+
+					<div class="p00_12">
+						<div class="p00_111">
+							<h3>今日收益</h3>
+							<a href="#">今日详单</a>
+						</div>
+						<div class="p00_121">最近一笔：88.88元</div>
+					</div>
+				</div>
+				<!--点击按钮，七日收益和月收益切换-->
+				<div class="title">
+					<a class="week" style="">七日收益</a>
+					<a class="month">月收益</a>
+				</div>
+
+				<!--七日折线图开始-->
+				<div class="p00_2">
+					<!--<img src="img/sjzxzx.png"/>-->
+					<div class="wrapper">
+						<!-- 代码 开始 -->
+						<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+						<div id="main" style="width: 900px;height:400px;"></div>
+					</div>
+				</div>
+				<!--折线图结束-->
+
+				<!--月折线图开始-->
+				<div class="p00_2s">
+					<!--<img src="img/sjzxzx.png"/>-->
+					<div class="wrapper">
+						<!-- 代码 开始 -->
+						<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+						<div id="maintwo" style="width: 900px;height:400px;"></div>
+					</div>
+				</div>
+				<!--折线图结束-->
+
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+	<!--七日收益-->
+	<script type="text/javascript">
+function aa(){
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('main'));
+		$.get('data.json').done(function (data) {
+    myChart.setOption({
+        title: {
+            text: '近七日收入折线图'
+        },
+        tooltip: {},
+//      legend: {
+//          data:['收益']
+//      },
+        xAxis: {
+            data: data.categories
+        },
+        yAxis: {},
+        series: [{
+            name: '收益',
+            type: 'line',
+            data: data.data
+        }]
+        
+        
+    });
+		});
+		
+		}
+aa();
+	</script>
+
+
+<!--月收益-->
+<script type="text/javascript">
+function bb(){
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('maintwo'));
+		$.get('data1.json').done(function (data) {
+    myChart.setOption({
+        title: {
+            text: '月收益'
+        },
+        tooltip: {},
+//      legend: {
+//          data:['收益']
+//      },
+        xAxis: {
+            data: data.categories
+        },
+        yAxis: {},
+        series: [{
+            name: '收益',
+            type: 'line',
+            data: data.data
+        }]
+        
+        
+    });
+		});
+		
+		}
+bb();
+	</script>
+	
+	
+	
+	<script>
+		$(function() {
+
+			$(".week").click(function() {
+				//alert(1)
+				$(".p00_2").css('display', 'block')
+				$(".p00_2s").css('display', 'none')
+			})
+
+			$(".month").click(function() {
+				//alert(1)
+				$(".p00_2s").css('display', 'block')
+				$(".p00_2").css('display', 'none')
+			})
+
+		})
+	</script>
+<!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.leoweather.min.js"></script>
+		<script>
+			$('.demo').leoweather({
+				format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+			});
+		</script>
+</html>

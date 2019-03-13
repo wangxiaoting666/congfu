@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商家首页</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			body {
+				font-size: 14px;
+				font-family: "微软雅黑"
+			}
+			
+			a {
+				color: #333;
+				text-decoration: none;
+			}
+			
+			.index_innersj {
+				/*width: 1102px;*/
+				height: 327px;
+				margin: auto;
+				border: 1px solid #CCCCCC;
+				margin-top: 30px;
+			}
+			
+			.index_sj1 {
+				float: left;
+				padding: 25px 25px;
+			}
+			
+			.index_sj2 {
+				width: 703px;
+				float: left;
+				padding: 25px 25px;
+			}
+			
+			.index_innersj h3 {
+				font-size: 34px;
+				margin: 20px 10px;
+			}
+			
+			.index_innersj p {
+				line-height: 30px;
+				font-size: 16px;
+			}
+			
+			.index_innersj p img {
+				margin-right: 10px;
+			}
+			
+			.index_innersj p span {
+				margin-right: 45px;
+			}
+			
+			.hidden {
+				display: none;
+			}
+			
+			.lanren {
+				width: 1102px;
+				height: auto;
+				margin: 0 auto;
+				overflow: hidden;
+				text-align: left;
+				background: #fff;
+				padding: 5px;
+			}
+			
+			.lanren ul.list {
+				overflow: hidden;
+			}
+			
+			.lanren ul.list li {
+				/*width: 416px;height: 150px;*/
+				margin: 5px;
+				float: left;
+				overflow: hidden;
+			}
+			
+			.lanren ul.list li img {
+				/*width: 100%;height: 100%;*/
+			}
+			
+			.lanren ul.list p {
+				padding: 10px;
+			}
+			
+			.lanren .more {
+				overflow: hidden;
+				padding: 10px;
+				text-align: center;
+			}
+			
+			.lanren .more a {
+				display: block;
+				width: 80px;
+				padding: 8px 0;
+				color: #fff;
+				margin: 0 auto;
+				background: #333;
+				text-align: center;
+				border-radius: 3px;
+			}
+			
+			.lanren .more a:hover {
+				text-decoration: none;
+				background: red;
+				color: #fff;
+			}
+			/* 动态获取数据*/
+			
+			.zxdong {}
+			
+			.zxdong_inner {
+				width: 1094px;
+				/*height: 1222px;*/
+				margin: auto;
+			}
+			
+			.zx {
+				width: 1105px;
+				height: 184px;
+				list-style: none;
+			}
+			
+			.zx_left {
+				float: left;
+				width: 180px;
+				height: 182px;
+			}
+			
+			.zx_center {
+				float: left;
+				width: 768px;
+				height: 150px;
+			}
+			
+			.zx_center h3 {
+				margin-bottom: 24px;
+			}
+			
+			.zx_center p {
+				line-height: 24px;
+				margin-bottom: 23px;
+			}
+			
+			.zx_center span {
+				display: block;
+				line-height: 24px;
+			}
+			
+			.zx_right {
+				float: left;
+				width: 128px;
+				height: 146px;
+			}
+			
+			.zx_right div {
+				height: 77px;
+			}
+		</style>
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+		<script>
+			function click(){
+		
+	
+			var _content = []; //临时存储li循环内容
+			var lanren = {
+				_default: 6, //默认显示图片个数
+				_loading: 5, //每次点击按钮后加载的个数
+				init: function() {
+					var lis = $(".lanren .hidden li");
+					$(".lanren ul.list").html("");
+					for(var n = 0; n < lanren._default; n++) {
+						lis.eq(n).appendTo(".lanren ul.list");
+					}
+					$(".lanren ul.list img").each(function() {
+						$(this).attr('src', $(this).attr('realSrc'));
+					})
+					for(var i = lanren._default; i < lis.length; i++) {
+						_content.push(lis.eq(i));
+					}
+					$(".lanren .hidden").html("");
+				},
+				loadMore: function() {
+					var mLis = $(".lanren ul.list li").length;
+					for(var i = 0; i < lanren._loading; i++) {
+						var target = _content.shift();
+						if(!target) {
+							$('.lanren .more').html("<p>全部加载完毕...</p>");
+							break;
+						}
+						$(".lanren ul.list").append(target);
+						$(".lanren ul.list img").eq(mLis + i).each(function() {
+							$(this).attr('src', $(this).attr('realSrc'));
+						});
+					}
+				}
+			}
+			lanren.init();
+		}
+	click();
+		</script>
+	</head>
+
+	<body>
+		<!--加载头部模板-->
+		<div id="header01"></div>
+
+		<div class="index_sj">
+			<!--<div  class="index_innersj">
+			 	    <div class="index_sj1"><img src="img/index_sj1.png"></div>
+			 	    <div class="index_sj2">
+			 	    	<h3>欧乐超市</h3>
+			 	    	<p><span>入驻时间:2016-12-05</span><span>点击量:1238</span><span>转发量:3457</span></p>
+			 	    	<p><img src="img/indexsj_02.png"/>时间：2016-11-08至2016-11-15</p>
+			 	    	<p><img src="img/index_sj03.png"/>地址：徐汇区宜山路889号</p>
+			 	    	<p>Ole’倡导一种自然、健康的品质生活，引领一种时尚、高端的生活潮流，凭借与众不同的商品与专业贴心的服 务，传递国际化的灿烂文化</p>
+			 	    </div>
+			 </div>-->
+			<ul>
+				<div class="text"></div>
+			</ul>
+		</div>
+		<!--代码部分begin-->
+		<div class="lanren">
+			<div class="hidden">
+				<ul>
+					<!--<li class="zx">
+		     	 			<div class="zx_left">
+		     	 				<img src="css/img/2_10.png">
+		     	 			</div>
+		     	 			<div class="zx_center">
+		     	 				<h3>新店开业刷刷送豪礼</h3>
+		     	 				<p>活动期间活动期间，凡进店使用聪付消费，即可获得巴拉巴拉小魔仙玩偶一个，消费满555元，即可参与iPhone7抽奖活动。 数量有限，先到</p>
+		     	 				<span>时间：2016-11-08 至 2016-11-15</span>
+		     	 				<span>地址：徐汇区宜山路889号</span>
+		     	 			</div>
+		     	 			<div class="zx_right">
+		     	 				<div>点击量</div>
+		     	 				<div><img src="img/zuixinfdj.png"><span>天天超市</span></div>
+		     	 			</div>
+		     	 		</li>-->
+					<div class="list"></div>
+
+				</ul>
+			</div>
+
+			<ul class="list">数据加载中，请稍后...</ul>
+			<div class="more">
+				<a href="javascript:;" onClick="lanren.loadMore();">加载更多</a>
+			</div>
+		</div>
+		<!--<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>-->
+
+	
+		<!--代码部分end-->
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+
+	<script>
+		//欧乐超市点击量转发量的动态加载
+		function limiteAjax() {
+
+			$.ajax({
+
+				url: "data/activey.json",
+
+				type: "GET",
+
+				success: function(data) {
+
+					var dataL = data.list.length;
+					var html = '<ul>'
+
+					for(var i = 0; i < 1; i++) {
+						var img = data.list[i].img;
+						var manager = data.list[i].manager;
+						var shijian = data.list[i].shijian;
+
+						var dianji = data.list[i].dianji;
+						var zhuanfa = data.list[i].zhuanfa;
+
+						var time = data.list[i].time;
+						var address = data.list[i].address;
+						html += "<div  class='index_innersj'>"
+						html += "<div class='index_sj1'><img src='" + img + "'/></div>"
+						html += "<div class='index_sj2'>"
+						html += "<h3>" + manager + "</h3>"
+							//			 	html += "<p>"
+						html += "<p><span>入驻时间:" + shijian + "</span>"
+						html += "<span>点击量:" + dianji + "</span>"
+						html += "<span>转发量:" + zhuanfa + "</span></p>"
+							// 	html += "</p>"
+						html += "<p><img src='img/indexsj_02.png'/>时间：" + time + "</p>"
+						html += "<p><img src='img/index_sj03.png'/>地址：" + address + "</p>"
+						html += "<p>Ole’倡导一种自然、健康的品质生活，引领一种时尚、高端的生活潮流，凭借与众不同的商品与专业贴心的服 务，传递国际化的灿烂文化</p>"
+						html += "</div>"
+						html += "</div>"
+
+					}
+
+					html += '</ul>';
+					$('.list').html(html)
+
+				}
+
+			})
+		}
+		limiteAjax();
+	</script>
+
+	<script>
+		function  LI(){
+     
+    
+     $.ajax({
+          
+          url:"data/bussiness.json",
+          
+          type:"GET",
+          
+          success:function(data){
+             
+                    
+               var dataL=data.list.length;
+               var html='<ul>'   
+     
+                   
+              for ( var i=0; i<6;i++){
+                            var img = data.list[i].img;
+                                     var manager=data.list[i].manager; 
+                                     var recharge=data.list[i].recharge;
+                                     
+                                     var time=data.list[i].time;
+                                     var address=data.list[i].address;
+                                     var dianji=data.list[i].dianji;
+                                     var tupian=data.list[i].tupian;
+                                      var chaoshi=data.list[i].chaoshi;
+                                     
+		     	 	html +=	"<li class='zx'>";
+		     	 	html +=	"<div class='zx_left'>" 
+		     	 	
+		     	
+		     	 	html +=	"<img src='"+img+"'/>"
+		     	 	html +=	"</div>"
+		     	 	html += "<div class='zx_center'>"
+		     	 	html +=	"<h3>" + manager + "</h3>"
+		     	 	html +=	"<p>" + recharge + "</p>"
+		     	 	html +=	"<span>" + time + "</span>"
+		     	 	html +=	"<span>" + address + "</span>"
+		     	 	html +=	"</div>"
+		     	 	html +=	"<div class='zx_right'>"
+		     	 	html +=	"<div>点击量" + dianji + "</div>"
+		     	 	html +=	"<div>"
+		     	 	html +=	"<img src='"+tupian+"'/>"        
+		     	 	html +=	"<span>" + chaoshi + "</span>"            
+		     	 	html +=	"</div>"              
+		     	 	html +=	"</div></li>";
+     
+              }
+              
+             
+               html+='</ul>';      
+            $('.list').html(html)
+              
+           
+          }
+          
+          
+     })
+}
+LI();
+
+	</script>
+	<script>
+	
+		</script>
+</html>

@@ -1,0 +1,44 @@
+//{
+//	"list": [
+//
+//		{
+//		"img": "img/index_sj1.png",
+//			"manager": "欧乐超市",
+//			"shijian": "2016-12-05",
+//
+//			"dianji": "12478",
+//			"zhuanfa": "3457",
+//			"time":"2016-11-08至2016-11-15",
+//		    "address":"徐汇区宜山路"
+//
+//		}
+//	]
+//} 
+
+{
+	"list": [
+		{
+			"CPassword": "741@163.com",
+			"address": "交通出行",
+			"bus_Id": 15,
+			"creatTime": "2016-10-24-08:04:52",
+			"email": "741@163.com",
+			"ip": "万也公司",
+			"login": "2016-10-24-08:04:23",
+			"logout": "2016-10-24-08:04:26",
+			"mark": "",
+			"money": 1000,
+			"number": "741@163.com",
+			"password": "123",
+			"pchange_Time": "2016-10-24-08:04:42",
+			"realname": "李总",
+			"relation": "",
+			"role": null,
+			"scope": "",
+			"shopName": "万也科技有限公司",
+			"tel": "15201935569",
+			"term": "",
+			"validity": ""
+		}
+	]
+}

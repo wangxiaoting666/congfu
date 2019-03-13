@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<style type="text/css">
+			body, html,#allmap {width: 500px;height: 500px;overflow: hidden;margin:100px auto;font-family:"微软雅黑";}
+		</style>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2yj0orPscf4IFIGVG2nrlYRFrGNYozAh"></script>
+		<title>根据中心点关键字周边搜索</title>
+	</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="kuayu.html">kuayu</a></li>
+			<li><a href="weather.html">weather</a></li>
+			<li><a href="baidumap.html">baidumap</a></li>
+			<li><a href="baidumaptag.html">baidumaptag</a></li>
+		</ul>
+	</header>
+	<div id="allmap"></div>
+</body>
+</html>
+<script src="js/hash.js"></script>
+<script type="text/javascript">
+
+	// 创建Map实例
+	var map = new BMap.Map("allmap");
+	//大诚中心经纬度
+	var point = new BMap.Point(116.301062, 39.915786);
+	//设置地图显示的中心及放大倍数
+	map.centerAndZoom(point,15);
+	//添加控件
+	map.addControl(new BMap.NavigationControl());
+	map.addControl(new BMap.ScaleControl());  
+	map.addControl(new BMap.OverviewMapControl());    
+	map.addControl(new BMap.MapTypeControl());   
+	//开启鼠标滚轮缩放
+	map.enableScrollWheelZoom(true); 
+	// 仅当设置城市信息时，MapTypeControl的切换功能才能可用
+	map.setCurrentCity("北京"); 
+	// 创建标注  
+	var marker = new BMap.Marker(point);  
+	// 将标注添加到地图中
+	map.addOverlay(marker); 
+	
+	//自定义信息窗口
+	var opts = {    
+	 width : 200,     // 信息窗口宽度    
+	 height: 80,      // 信息窗口高度 
+	 title : "您好，欢迎来到易联科技"  // 信息窗口标题   
+	}    
+	// 创建信息窗口对象   
+	var infoWindow = new BMap.InfoWindow("hello", opts);   
+	map.openInfoWindow(infoWindow, map.getCenter());  
+   	//事件监听  
+	marker.addEventListener("click", function(){    
+		// 打开信息窗口
+	 	map.openInfoWindow(infoWindow, map.getCenter());      			 
+	});
+	//拖拽标注
+	marker.enableDragging();    
+	marker.addEventListener("dragend", function(e){    
+	 alert("当前位置：" + e.point.lng + ", " + e.point.lat);    
+	})
+//	local.searchNearby("小吃", "万寿路");
+</script>

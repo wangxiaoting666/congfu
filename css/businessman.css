@@ -1,0 +1,148 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 14px/14px "微软雅黑";
+	color: #333;
+	background: #fff;
+}
+/*商家中心和天气预报*/
+ 
+ 
+.businessman{height: 122px; 
+background:url(../img/bussinessman_in.png) no-repeat center;
+ background-size:cover; position: relative; width: 100%;}
+ .businessman-inner{ width:1111px; margin: auto;height: 122px;}
+ .user{float: left; width:600px;height: 122px;}
+ 
+ 
+
+
+/*分页*/
+* {
+            padding: 0;
+            margin: 0;
+        }
+
+        .list {
+            width: 1000px;
+            margin: 10px auto;
+        }
+
+     
+
+        
+
+        .list ul li div.detail {
+            margin: 5px;
+            color: #559999;
+            float: left;
+            /*width: 240px;*/
+           height: 40px;
+        }
+   /*.detail span{text-align: center;margin: 0 40px ; display: inline-block;}*/
+       
+        .setPageDiv {
+            clear: left;
+           /* width: 1000px;*/
+            margin-left: 200px;
+        }
+
+
+/* 商家中心的内容*/
+.inner_businessman{width: 999px; /*height: 803px;*/ margin: auto;  overflow: hidden; }
+         .aa {
+				width: 158px; float:left;border: 1px solid #CCCCCC;margin-top: 10px;
+			}
+			
+			.aa li {
+				
+				list-style: none;
+				cursor: pointer;
+				list-style: none;line-height: 32px; text-align: center; margin-top: 3px;
+			}
+			
+			.bb {
+				width: 700px;
+				float: left;
+				
+			}
+			
+			    
+		  	   
+		  	    
+		  	    
+		  	    /*.businessman_main_inner{width: 979px; height: 735px; margin: auto;  border: 1px solid #CCCCCC;overflow: hidden; }
+		  	     .businessman_main_innerL {width: 158px; float:left;border-right: 1px solid #CCCCCC;padding:10px  0px;}
+		  	     .businessman_main_innerL li{list-style: none;line-height: 24px; text-align: center; margin-top: 3px;}
+		  	     .businessman_main_innerL .li_01{width: 161px; height:127px;border-bottom: 1px solid #CCCCCC; }
+		  	     .businessman_main_innerL .li_02{}*/
+		  	     
+		  	    /*交易记录*/		  	     
+.businessman_main_innerR01 {width:806px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;margin-top:10px;}
+		  	     .businessman_main_innerRS01{ background: url(../img/p_jiaoyi.png) no-repeat left; margin-left: 10px; height: 50px; } 
+		  	     .businessman_main_innerRS01 h3{margin-left: 15px; color: #666666; line-height: 48px;}
+		  	     .businessman_main_innerRZ01{width:814px; height: 180px; border: 1px solid #CCCCCC; margin-left: 10px; background: #f5f5f5;} 
+		  	     .businessman_main_innerRZ01{/*width:784px; height: 177px;*/} 
+		  	     .businessman_main_innerRZ01  .div1{line-height: 30px;padding:  38px  0  0 30px;  }
+		  	     .businessman_main_innerRZ01 div{line-height: 37px; padding-left: 30px;}
+		  	     /*.businessman_main_innerRZ div p{font: "微软雅黑"; font-size:15px}*/
+		  	      .businessman_main_innerRZ01 input{width:117px; height: 36px; background: url(../img/p_rili.png) no-repeat right;border: 1px solid #CCCCCC;}
+		  	     
+		  	      .businessman_main_innerRZ01 p{display: inline;  font-size: 16px; font-weight: bold;}
+		  	      .businessman_main_innerRZ01 a{display:inline-block; margin-left: 22px;font-size: 15px; font-weight: bold; }
+		  	      .businessman_main_innerRZ01 a:hover{/*width:45px; height:22px;*/background:#4b53ab ; }
+		  	      
+		  	      .p01{ border: 1px solid #CCCCCC; height: 44px; border-top: none; margin-left: 10px;}
+		  	      .p01 li{ float: left;font-size: 16px; font-weight: bold; text-align: center; margin: 0 30px; line-height: 40px;}
+/*收益报表
+             .businessman_main_innerR02 {width:810px; height: 803px;float:left;margin-left: 10px; border: 1px solid #CCCCCC;overflow: hidden;}
+		  	     .businessman_main_innerRS02{ background: url(../img/businessman.png) no-repeat left; margin-left: 10px; height: 50px; } 
+		  	     .businessman_main_innerRS02 h3{margin-left: 15px; color: #666666; line-height: 48px;}
+		  	     .businessman_main_innerR02  p{display:block;}
+		  	     .b02_1{height: 35px;}
+		  	     .b02_2{height: 411px;}
+		  	     .b02_3{height: 45px;}
+		  	     .b02_4{height: 98px;}
+		  	     .b02_5{height: 47px;}*/
+		  	     
+
+
+
+
+	/*入驻申请*/	  	
+	     
+.b04_1{}
+.b04_2{}
+.b04_3{ background: url(../img/b3_03.png) no-repeat;}
+/*入驻申请身份信息资料填写*/	  
+.b05_1{}
+.b05_2{}
+.b05_3{ }
+.b05_3   .b05_31{ width:794px; height: 258px;}
+.b05_3   .b05_32{ }
+
+
+/*天气预报*/
+
+		
+	.demo { /*width:250px;*/ 
+	 color:#FFF; 
+	 float: left;
+	 margin-top: 10px;
+	 }
+	.demo i { background: no-repeat top right; display:inline-block; 
+	height:57px; line-height:128px; margin:0 auto 30px auto; 
+	font-size:31px; padding-left:150px; font-style:normal;
+	 text-align:center; font-weight:bold; margin-top: 20px; float: left; }
+	.demo i.icon-xiaoyu { background-image:url(../icon/xiaoyu.png); }
+	.demo i.icon-zhongyu { background-image:url(../icon/zhongyu.png); }
+	.demo i.icon-dayu { background-image:url(../icon/dayu.png); }
+	.demo i.icon-qing { background-image:url(../icon/qing.png); }
+	.demo i.icon-duoyun { background-image:url(../icon/duoyun.png); }
+	.demo i.icon-yin { background-image:url(../icon/yin.png); }
+	.demo p {   font-size:16px; float: left;  font-size: 19px; font-weight: bold;  margin-top: 46px; margin-left: 20px;}
+	
+	.demo p span { margin:0 15px; }
+

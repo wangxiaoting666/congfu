@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/personal.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/businessman.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+<!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>
+		<style type="text/css">
+			.businessman_main_innerR03 {
+				width: 806px;
+				height: 776px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			
+			.b03_1yh {
+				margin: 10px 0 0 10px;
+			}
+			
+			.b03_2yh {
+				width: 772px;
+				margin: 0px 0 20px 16px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				border-bottom: 1px solid #CCCCCC;
+				line-height: 49px;
+			}
+			
+			.b03_2yh img {
+				margin-left: 560px;
+			}
+			
+			.b03_2yh a {
+				color: #B20007;
+			}
+			
+			.b03_3yh {}
+			/*.b03_3yh div{ margin-left: 228px;}*/
+			
+			.b03_3yh p {
+				display: inline-block;
+			}
+			
+			.b03_3yh1 {
+				margin-left: 238px;
+				margin-top: 77px;
+			}
+			
+			.b03_3yh2 {
+				margin-left: 269px;
+			}
+			
+			.b03_3yh3 {
+				margin-left: 252px;
+			}
+			
+			.b03_3yh3 input {
+				margin-right: 14px;
+			}
+			/*.b03_3yh3 img{ line-height: 24px;  padding-top: 10px; display: inline;}*/
+			
+			.b03_3yh4 {
+				margin-left: 235px;
+			}
+			
+			.b03_3yh5 {
+				margin-left: 250px;
+			}
+			
+			.b03_3yh6 {
+				margin-left: 245px;
+			}
+			
+			.add {
+				width: 338px;
+				height: 46px;
+				background: #b20007;
+				margin: 44px 0 74px 228px;
+				color: #FFFFFF;
+				font-size: 22px;
+				font-weight: bold;
+			}
+			
+			input {
+				width: 181px;
+				height: 35px;
+				margin-bottom: 17px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--商家中心加天气预报-->
+		<div class="businessman">
+			<div class="businessman-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">商家中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">ID：1234</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		<div class="inner_businessman">
+			<div class="aa">
+				<div id="leftmenu0">
+					<li style="margin-top: 15px;"><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="bussinessgainrecording.html">收益记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessreport.html">收益报表</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="bussinessaccountinformation.html">账户信息</a>
+					</li>
+					<li>
+						<a href="bussinesssettledapplication.html">入驻申请</a>
+					</li>
+					<li>
+						<a href="bussinessactivitypromulgate.html">活动发布</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessactivitymanagement.html">活动管理</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="bussinesspresentapplication.html">提现申请</a>
+					</li>
+					<li>
+						<a href="bussinesspresentrecord.html">提现记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessbankcard.html">银行卡</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="bussinesssafetatic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessservicereminder.html">提醒服务</a>
+					</li>
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--2333333333333333333333333-->
+
+				<div class="businessman_main_innerR03">
+					<div class="b03_1yh"><img src="img/b_yh04.png" /></div>
+					<div class="b03_2yh">添加银行卡 </div>
+					<div class="b03_3yh">
+						<form>
+							<div class="b03_3yh1">
+								<p>开户银行：</p><input type="text" placeholder="请选择开户银行" /></div>
+							<div class="b03_3yh2">
+								<p>姓名：</p><input type="text" placeholder="*见乐" /></div>
+							<div class="b03_3yh3">
+								<p>身份证：</p><input type="text" placeholder="430********8715" /><img src="img/sjzxyhk.png"></div>
+							<div class="b03_3yh4">
+								<p>储蓄卡号：</p><input type="text" /></div>
+							<div class="b03_3yh5">
+								<p>手机号：</p><input type="text" placeholder="此卡在银行预留的手机号" /></div>
+							<div class="b03_3yh6">
+								验证码： <input type="text" id="checkCode" name="checkCode" size="6" class="yanzheng" style="width: 92px;  height: 37px;" />
+								<input id="btnSendCode" type="button" value="获取验证码" onclick="sendMessage()" style="width: 86px;  height: 38px; border: none;" />
+							</div>
+							<div><input type="submit" class="add" value="完成添加" /></div>
+
+						</form>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+	<script>
+		//倒计时
+		var InterValObj; //timer变量，控制时间  
+		var count = 60; //间隔函数，1秒执行  
+		var curCount; //当前剩余秒数  
+		var code = ""; //验证码  
+		var codeLength = 6; //验证码长度  
+		function sendMessage() {
+			curCount = count;
+			var phone = $("#phone").val(); //手机号码  
+			if(phone != "") {
+				//设置button效果，开始计时  
+				$("#btnSendCode").attr("disabled", "true");
+				$("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+				InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次  
+				//向后台发送处理数据  
+				$.ajax({
+					type: "POST", //用POST方式传输  
+					dataType: "text", //数据格式:JSON  
+					url: 'RegisterMessage.action', //目标地址  
+					data: "phone=" + phone + "&code=" + code,
+					error: function(XMLHttpRequest, textStatus, errorThrown) {},
+					success: function(msg) {}
+				});
+			} else {
+				alert("手机号码不能为空！");
+			}
+		}
+		//timer处理函数  
+		function SetRemainTime() {
+			if(curCount == 0) {
+				window.clearInterval(InterValObj); //停止计时器  
+				$("#btnSendCode").removeAttr("disabled"); //启用按钮  
+				$("#btnSendCode").val("重新发送验证码");
+				code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效      
+			} else {
+				curCount--;
+				$("#btnSendCode").val("请在" + curCount + "秒内输入验证码");
+			}
+		}
+	</script>
+
+</html>

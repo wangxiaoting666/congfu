@@ -1,0 +1,47 @@
+{
+	"list": [
+		{
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 761,
+			"status": null,
+			"time": "2017-5-18-05:37"
+		}, {
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 650,
+			"status": null,
+			"time": "2017-5-15-05:37"
+		}, {
+			"charge_Id": 0,
+			"manager": "漕河泾站点",
+			"recharge": 400,
+			"status": null,
+			"time": "2017-5-16-05:37"
+		},   {
+			"charge_Id": 0,
+			"manager": "虹漕路站点",
+			"recharge": 622,
+			"status": null,
+			"time": "2017-5-17-05:33"
+		}, {
+			"charge_Id": 0,
+			"manager": "虹漕路站点",
+			"recharge": 596,
+			"status": null,
+			"time": "2017-5-18-05:34"
+		}, {
+			"charge_Id": 0,
+			"manager": "虹漕路站点",
+			"recharge": 100,
+			"status": null,
+			"time": "2017-5-19-10:04"
+		}, {
+			"charge_Id": 0,
+			"manager": "虹漕路站点",
+			"recharge": 420,
+			"status": null,
+			"time": "2017-5-20-10:07"
+		}
+	]
+}

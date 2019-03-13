@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<style>
+			/*商家登录成功*/
+			
+			.successful {
+				width: 601px;
+				height: 471px;
+				background: #ffffff;
+				border: 1px solid #CCCCCC;
+				margin: 0 auto;
+			}
+			
+			.successful .s {
+				width: 430px;
+				height: 157px;
+				border-bottom: 1px solid #CCCCCC;
+				margin-left: 92px;
+			}
+			
+			.successful .s h3 {
+				font-size: 29px;
+				color: #525898;
+				text-align: center;
+				line-height: 54px;
+			}
+			
+			.successful .z {
+				height: 206px;
+				margin-left: 199px;
+			}
+			
+			.successful .z h3 {
+				font-size: 24px;
+				line-height: 82px;
+			}
+			
+			.successful .z a {
+				color: #3894cf;
+				display: block;
+				font: 17px "微软雅黑";
+			}
+			
+			.successful .x {
+				width: 340px;
+				height: 47px;
+				border: 1px solid #CCCCCC;
+				margin-left: 131px;
+			}
+			
+			.successful .x a {
+				display: block;
+				text-align: center;
+				line-height: 45px;
+				line-height: 43px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('login_footer_resiger.html #header');
+				$('#footer01').load('login_footer_resiger.html  #footer');
+
+			})
+		</script>
+
+	</head>
+
+	<body>
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<div class="wrap_successful"></div>
+		<div class="successful">
+			<div class="s">
+				<h3>注册成功</h3>
+				<h3>欢迎使用聪付卡</h3>
+			</div>
+			<div class="z">
+				<h3>领取入驻快速通道</h3>
+				<a href="javascript:;">在附近服务站办理商家入驻</a>
+				<a href="javascript:;">在聪付官网提交商家入驻申请</a>
+			</div>
+			<div class="x">
+				<a href="javascript:;" id="wc">完成</a>
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+		<script>
+			/*售前客服*/
+			$(function() {
+				$("#wc").click(function() {
+					//alert(1)
+					$(".successful").css('display', 'none')
+				})
+
+				/*$(".jianxiao").click(function(){
+					//alert(1)成功				
+					$("#form").stop().slideDown();
+				})	*/
+
+			})
+		</script>
+	</body>
+
+</html>

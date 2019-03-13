@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/businessman.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<!--<script src="js/businessman.js"></script>-->
+
+		<!--分页-->
+		<link rel="stylesheet" href="css/pagination.css" />
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.pagination.js"></script>
+
+		<!--日历-->
+		<script src="js/jquery.page.js"></script>
+		<script src="js/Calendar.js"></script>
+<!--jQuery自动定位当地天气预报代码-->
+		<!--<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>-->
+		<style type="text/css">
+			.businessman_main_innerR01 {
+				width: 806px;
+				height: 803px;
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+			}
+			
+			.businessman_main_innerRS01 {
+				background: url(img/sjzxtxjl.png) no-repeat left;
+				margin-left: 10px;
+				height: 50px;
+			}
+			
+			.businessman_main_innerRS01 h3 {
+				margin-left: 15px;
+				color: #666666;
+				line-height: 48px;
+			}
+			
+			.businessman_main_innerRZ01 {
+				width: 814px;
+				height: 180px;
+				border: 1px solid #CCCCCC;
+				margin-left: 10px;
+				background: #f5f5f5;
+			}
+			
+			.businessman_main_innerRZ01 .div1 {
+				line-height: 30px;
+				padding: 38px 0 0 30px;
+			}
+			
+			.businessman_main_innerRZ01 div {
+				line-height: 37px;
+				padding-left: 30px;
+			}
+			
+			.businessman_main_innerRZ01 input {
+				width: 117px;
+				height: 36px;
+				background: url(img/p_rili.png) no-repeat right;
+				border: 1px solid #CCCCCC;
+			}
+			
+			.businessman_main_innerRZ01 p {
+				display: inline;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			
+			.businessman_main_innerRZ01 a {
+				display: inline-block;
+				margin-left: 22px;
+				font-size: 15px;
+				font-weight: bold;
+			}
+			
+			.businessman_main_innerRZ01 a:hover {
+				background: #4b53ab;
+			}
+			
+			.p01 {
+				border: 1px solid #CCCCCC;
+				height: 44px;
+				border-top: none;
+				margin-left: 10px;
+			}
+			
+			.p01 li {
+				float: left;
+				font-size: 16px;
+				font-weight: bold;
+				text-align: center;
+				margin: 0 30px;
+				line-height: 40px;
+			}
+			/*拼接后的数据样式*/
+			
+			.detail span {
+				text-align: center;
+				display: inline-block;
+				width: 131px;
+			}
+			
+			.detail .price1 {
+				width: 150px;
+			}
+			
+			.detail .price2 {}
+			
+			.detail .price3 {
+				margin-left: 5px;
+			}
+			
+			.detail .price4 {}
+			
+			.detail .price5 {}
+			
+			.detail .price6 {
+				margin-right: 25px;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body onload="aa('JIAOYI')">
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--商家中心加天气预报-->
+		<div class="businessman">
+			<div class="businessman-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">商家中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">ID：1234</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		<div class="inner_businessman">
+			<div class="aa">
+				<div id="leftmenu0">
+					<li style="margin-top: 15px;"><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="bussinessgainrecording.html">收益记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessreport.html">收益报表</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="bussinessaccountinformation.html">账户信息</a>
+					</li>
+					<li>
+						<a href="bussinesssettledapplication.html">入驻申请</a>
+					</li>
+					<li>
+						<a href="bussinessactivitypromulgate.html">活动发布</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessactivitymanagement.html">活动管理</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="bussinesspresentapplication.html">提现申请</a>
+					</li>
+					<li>
+						<a href="bussinesspresentrecord.html">提现记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessbankcard.html">银行卡</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="bussinesssafetatic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessservicereminder.html">提醒服务</a>
+					</li>
+				</div>
+
+				<ul class="li_02">
+					<li><a href="noreciveyanz.html">常见问题？</a></li>
+					<li><a href="Merchantsettled.html">如何入驻聪付？</a></li>
+					<li><a href="find.html">忘记支付密码？</a></li>
+					<li><a certificationMessage.html="#">什么是实名认证？</a></li>
+					<li><a href="bussinesssafetatic.html">收不到邮件激活？</a></li>
+					<li><a href="servicecenter.html">手机充值未到账？</a></li>
+					<li><a href="bussinesssafetatic.html">如何设置安全问题？</a></li>
+				</ul>
+
+			</div>
+			<!--右边内容-->
+			<div class="businessman_main_innerR01">
+				<div class="businessman_main_innerRS01">
+					<h3></h3>
+				</div>
+				<div class="businessman_main_innerRZ01">
+					<div class="div1">
+						<p>提现日期</p>
+						<!-- 日历 -->
+						<input type="text" placeholder="2012-12-12" name="starttime control_date" onfocus="MyCalendar.SetDate(this)" id="control_date" size="10" maxlength="10" onClick="new Calendar().show(this);" readonly>
+						<input type="text" placeholder="2012-12-12" name="endtime control_date2" onfocus="MyCalendar.SetDate(this)" id="control_date2" size="10" maxlength="10" onClick="new Calendar().show(this);" readonly>
+
+						<a href="javascript:void(0)" onclick="aa('2 JIAOYI')">今日</a>
+						<a href="javascript:void(0)" onclick="aa('3 JIAOYI')">最近一周</a>
+						<a href="javascript:void(0)" onclick="aa('4 JIAOYI')">最近一月</a>
+					</div>
+					<div>
+						<p>交易类型</p>
+						<a>所有</a>
+						<a>超市购物</a>
+						<a>农贸购物</a>
+						<a>商场购物</a>
+						<a>交通出行</a>
+						<a>娱乐旅游</a>
+
+					</div>
+
+					<div>
+						<p>交易状态</p>
+						<a>全部</a>
+						<a>已完成</a>
+						<a>退款中</a>
+						<a>已关闭</a>
+					</div>
+				</div>
+
+				<div class="p01">
+					<ul>
+						<li>创建时间</li>
+						<li>交易类型|名称</li>
+						<li>交易方</li>
+						<li>金额（元）</li>
+						<li>交易状态</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<!-- 分页-->
+				<div class="list">
+				</div>
+				<div class="setPageDiv">
+
+					<div class="Pagination" id="pagination"></div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+	<script>
+		function aa(id1) {
+			//分页
+			$(function() {
+
+				$('.setPage').change(function() {
+
+					getMsg(parseInt($(this).val()))
+				})
+
+				function getMsg(num) {
+					$.ajax({
+						url: 'data/' + id1 + '.json',
+						type: 'GET',
+						dataType: 'json',
+						success: function(data) {
+							var sun1 = data;
+							//1.计算分页数量
+							var showNum = num;
+							var dataL = data.list.length;
+							var pageNum = Math.ceil(dataL / showNum);
+							//var address = data.list[0].bus.address;
+							// var bus_Id=data.list[0].bus.bus_Id; 
+							//   var money=data.list[0].bus.money;
+							$('.Pagination').pagination(pageNum, {
+								num_edge_entries: 1, //边缘页数
+								num_display_entries: 4, //主体页数
+								items_per_page: 1, //每页显示1项
+								prev_text: "上一页",
+								next_text: "下一页",
+								callback: function(index) {
+									var aaaaa = index;
+									console.log(index);
+									var html = '<ul>'
+
+									console.log(showNum * index + '~' + parseInt(showNum * index) + parseInt(showNum))
+									for(var i = showNum * index; i < showNum * index + showNum; i++) {
+										var qqqq = dataL;
+										console.log(i)
+										if(i < dataL) {
+											var address = data.list[i].bus.address;
+											var bus_Id = data.list[i].bus.bus_Id;
+											var money = data.list[i].bus.money;
+											var shopName = data.list[i].bus.shopName;
+
+											var person = data.list[i].person;
+											//                                   var name="网点充值";
+											var hh = "已完成"
+											html += "<li >";
+
+											html += "<div class='detail'>";
+
+											html += "<span class='price1'>" + address + "</span>"
+											html += "<span class='price2'>" + money + "</span>"
+											html += "<span class='price3'>" + bus_Id + "</span>"
+											html += "<span class='price4'>" + shopName + "</span>"
+											html += "<span class='price5'>" + person + "</span>"
+											html += "<span class='price6'>" + hh + "</span>"
+
+											html += "</div></li>";
+										}
+									}
+									html += '</ul>';
+									$('.list').html(html)
+								}
+							})
+
+						}
+					})
+				}
+				getMsg(8)
+
+			})
+		}
+	</script>
+
+</html>

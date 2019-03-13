@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/personal.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/businessman.css" />
+		<link rel="stylesheet" type="text/css" href="css/com.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+<!--jQuery自动定位当地天气预报代码-->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.leoweather.min.js"></script>
+		<style type="text/css">
+			.businessman_main_innerR03 {
+				width: 806px;
+				/*height: 892px;*/
+				float: left;
+				margin-left: 10px;
+				border: 1px solid #CCCCCC;
+				overflow: hidden;
+				margin-top: 10px;
+				margin-bottom: 50px;
+			}
+			/*账户信息333333333*/
+			
+			.b03_1 {
+				margin: 10px 0 0 10px;
+			}
+			
+			.b03_2 {
+				margin: 10px 0 10px 16px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+			}
+			
+			.b03_2 img {
+				margin-left: 560px;
+			}
+			
+			.b03_2 a {
+				color: #B20007;
+			}
+			
+			.b03_4 {
+				border-top: 1px solid #CCCCCC;
+				margin-left: 10px;
+				margin-bottom: 44px;
+			}
+			
+			.b03_4 p {
+				margin-left: 10px;
+				line-height: 35px;
+			}
+			
+			.b03_5 {
+				margin: 10px 0 10px 16px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+			}
+			
+			.b03_6 {
+				border-top: 1px solid #CCCCCC;
+				margin-left: 10px;
+			}
+			
+			.b03_6 .b03_61 {
+				margin: 0 67px 0 110px;
+			}
+			
+			.b03_6 .b03_62 {
+				margin: 0 67px 0 54px;
+			}
+			
+			.b03_6 .b03_63 {
+				margin: 0 67px 0 126px;
+			}
+			
+			.b03_6 p {
+				margin-left: 10px;
+				line-height: 35px;
+			}
+			
+			.b03_6 p a {
+				color: #c3585a;
+			}
+			
+			.sqrz {
+				width: 338px;
+				height: 46px;
+				/*margin-bottom: 20px;*/
+				background: #b20007;
+				margin: 112px 0 75px 222px;
+				color: #FFFFFF;
+				font-size: 22px;
+				font-weight: bold;
+			}
+		</style>
+
+		<!--加载头部模板-->
+		<script>
+			$(function() {
+				$('#header01').load('one_headerfooter.html  #header_wrap');
+				$('#footer01').load('one_headerfooter.html  #footer_wrap');
+
+			})
+		</script>
+	</head>
+
+	<body>
+
+		<!--加载头部模板-->
+		<div id="header01"></div>
+		<!--商家中心加天气预报-->
+		<div class="businessman">
+			<div class="businessman-inner">
+				<div class="user">
+					<div style="float: left; width: 97px; height: 97px; border-radius: 50%; background:url(img/userimg.png) no-repeat; background-size: cover; margin-top: 10px;"></div>
+					<div style="float: left; margin-top: 6px; margin-left: 15px;">
+						<div style="font-size: 21px; color: #FFFFFF; line-height: 65px;">商家中心</div>
+						<div style="font-size: 21px; color: #FFFFFF;">ID：1234</div>
+					</div>
+				</div>
+
+				<div class="demo">
+			<script>
+				$('.demo').leoweather({
+					format: '<i class="icon-{图标}"></i><p>{城市}<span>|</span>{天气}<span>|</span>{气温}℃</p>'
+				});
+			</script>
+		</div>
+
+			</div>
+		</div>
+		<div class="inner_businessman">
+			<div class="aa">
+				<div id="leftmenu0">
+
+					<li style="margin-top: 15px;"><img src="img/businessman 02.png" /></li>
+					<li>
+						<a href="bussinessgainrecording.html">收益记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessreport.html">收益报表</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 03.png" /></li>
+					<li>
+						<a href="bussinessaccountinformation.html">账户信息</a>
+					</li>
+					<li>
+						<a href="bussinesssettledapplication.html">入驻申请</a>
+					</li>
+					<li>
+						<a href="bussinessactivitypromulgate.html">活动发布</a>
+					</li>
+
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessactivitymanagement.html">活动管理</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 04.png" /></li>
+					<li>
+						<a href="bussinesspresentapplication.html">提现申请</a>
+					</li>
+					<li>
+						<a href="bussinesspresentrecord.html">提现记录</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessbankcard.html">银行卡</a>
+					</li>
+					<li style="margin-top: 15px;"><img src="img/businessman 05.png" /></li>
+					<li>
+						<a href="bussinesssafetatic.html">安全策略</a>
+					</li>
+					<li style="border-bottom: 1px solid #CCCCCC;">
+						<a href="bussinessservicereminder.html">提醒服务</a>
+					</li>
+
+				</div>
+
+				<ul class="li_02">
+					<li>常见问题？</li>
+					<li>如何入驻聪付？</li>
+					<li>忘记支付密码？</li>
+					<li>什么是实名认证？</li>
+					<li>收不到邮件激活？</li>
+					<li>手机充值未到账？</li>
+					<li>如何设置安全问题？</li>
+				</ul>
+
+			</div>
+
+			<div id="mcont0" class="bb">
+
+				<!--2333333333333333333333333-->
+
+				<div class="businessman_main_innerR03">
+					<ul>
+						<!--<div class="b03_1"><img src="img/p_zhxx1.png"/></div>
+			           <div  class="b03_2">用户信息 </div>
+			          
+			           <div class="b03_4">
+			           	       <p>用户名：189*8**6178</p>
+			           	        <p>真实姓名：*乐</p>
+			           	        <p>证件类型：身份证</p>
+			           	       <p>证件号码：240823*********1524</p>
+			           	       <p>证件有效期：</p>
+			           	       <p>性别：男</p>
+			           	       <p>国籍：中国</p>
+			           	       <p>职业：未填写</p>
+			           	       <p>地址：未填写</p>
+			           </div>
+			           
+			           
+			           
+			           <div  class="b03_2">商家信息 </div>
+			          
+			           <div class="b03_4">
+			           	       <p>名称：未填写</p>
+			           	        <p>注册号：未填写</p>
+			           	        <p>单位所在地：未填写</p>
+			           	       <p>住所：未填写</p>
+			           	       <p>经营范围：未填写</p>
+			           	       
+			           </div>
+			           
+			            
+			           <div  class="b03_2">法人代表信息 </div>
+			          
+			           <div class="b03_4">
+			           	       <p>法定代表人姓名：未填写</p>
+			           	        <p>法定代表人身份证：未填写</p>
+			           	        <p>证件有效期：未填写</p>
+			           	       <p>填写人身份：未填写</p>
+			           	       <p>手机号：未填写</p>
+			           	       
+			           </div>-->
+						<div class="list"></div>
+					</ul>
+
+					<div class="b03_5">商家收益</div>
+					<div class="b03_6">
+						<p>账户总收益：<span class="b03_61">0.00元</span>
+							<a href="商家中心-首页.html">收益明细</a>
+						</p>
+						<p>人民币账户可用余额：<span class="b03_62">0.00元</span>
+							<a href="商家中心-充值记录.html">立即提现</a>
+						</p>
+						<p>冻结余额：<span class="b03_63">0.00元</span> 因安全原因冻结，立即拨打客服电话888888</p>
+						<!--<div class="sqrz"></div>-->
+						<a href="#" target="_blank">
+							<div><input type="button" value="申请入驻" class="sqrz" /></div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!--加载尾部的内容-->
+		<div id="footer01"></div>
+	</body>
+	<script>
+		//欧乐超市点击量转发量的动态加载
+		function limiteAjax() {
+
+			$.ajax({
+
+				url: "data/account.json",
+
+				type: "GET",
+
+				success: function(data) {
+
+					var dataL = data.length;
+					var html = '<ul>'
+					for(var i = 0; i < 1; i++) {
+						var tel = data.tel;
+						var realname = data.realname;
+						var number = data.number;
+
+						var sex = data.sex;
+						var occupation = data.occupation;
+
+						var address = data.address;
+
+						html += "<div class='b03_1'><img src='img/p_zhxx1.png'/></div>"
+						html += "<div  class='b03_2'>用户信息 </div>"
+						html += "<div class='b03_4'>"
+						html += "<p>用户名：" + tel + "</p>"
+						html += "<p>真实姓名：" + realname + "</p>"
+						html += "  <p>证件类型：身份证</p>"
+						html += " <p>证件号码：" + number + "</p>"
+						html += " <p>证件有效期：10年</p>"
+						html += "<p>性别：" + sex + "</p>"
+						html += "<p>国籍：中国</p>"
+						html += "<p>职业：" + occupation + "</p>"
+						html += "<p>地址：" + address + "</p>"
+						html += "</div>"
+						html += "<div  class='b03_2'>商家信息 </div>"
+						html += "<div class='b03_4'>"
+						html += "<p>名称：未填写</p>"
+						html += "<p>注册号：未填写</p>"
+						html += "  <p>单位所在地：未填写</p>"
+						html += " <p>住所：未填写</p>"
+						html += "<p>经营范围：未填写</p>"
+						html += "</div>"
+						html += "  <div  class='b03_2'>法人代表信息 </div>"
+						html += " <div class='b03_4'>"
+						html += "<p>法定代表人姓名：未填写</p>"
+						html += "   <p>法定代表人身份证：未填写</p>"
+						html += "   <p>证件有效期：未填写</p>"
+						html += "  <p>填写人身份：未填写</p>"
+						html += "  <p>手机号：未填写</p>"
+						html += "</div>"
+
+					}
+
+					html += '</ul>';
+					$('.list').html(html)
+
+				}
+
+			})
+		}
+		limiteAjax();
+	</script>
+
+</html>
